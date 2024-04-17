@@ -1,0 +1,102 @@
+varRelationship:=HaveRelationships["hasimages"];
+varImagesChanged:=HaveRelationshipsChanged["hasimages"];
+varImagesDeleted:=AreRelationshipsDeleted["hasimages","image"];
+varRelAttrChanged:=HaveAnyRelationshipAttributesChanged["_DEFAULT","_DEFAULT","hasimages","image","thgrelisprimary"];
+varRelatedIds:="";
+varoriginalfilename:="";
+varlasttwocharoffilename:="";
+varthumbnailId:="";
+varnoofchar:="";
+varPrimaryImageId:="";
+varIsPrimary:="";
+varDisplaySeq:="";
+varSequence:="";
+varCountOfUnderScore:="";
+varThumbnail:="";
+varThumbnailExists:="";
+varfinaloriginalname:="";
+varGetDisplaySequence:="";
+varIndexOfFinalString:="";
+varContinue:=true;
+
+IIF[varRelationship OR varImagesChanged OR varRelAttrChanged OR varImagesDeleted,
+SetVariable["varRelatedIds",GetRelatedEntityIds["hasimages","image"]] AND
+SetVariable["varThumbnail",GetEntityProperty["thumbnailid"]]
+,false] AND
+
+IIF[IsNullOrEmpty[varThumbnail]=false,
+SetVariable["varThumbnailExists",GetRelatedEntityIdByAttributeValue["_DEFAULT","_DEFAULT","hasimages","image","thumbnailid",varThumbnail]],false] AND
+
+IIF[IsNullOrEmpty[varThumbnailExists] = false AND Contains[varThumbnailExists,varRelatedIds] = false,
+SetEntityProperty["thumbnailid",""],false] AND
+
+
+
+IIF[IsNullOrEmpty[varThumbnailExists],
+SetEntityProperty["thumbnailid",""],false] AND
+
+
+IIF[IsNullOrEmpty[varRelatedIds] = false,ITERATE[varRelatedIds,'
+
+SetVariable["varoriginalfilename",""] AND 
+SetVariable["varnoofchar",""] AND 
+SetVariable["varCountOfUnderScore",""] AND 
+SetVariable["varIndexOfFinalString",""] AND 
+SetVariable["varGetDisplaySequence",""] AND 
+SetVariable["varContinue",true] AND 
+SetVariable["varlasttwocharoffilename",""] AND 
+
+SetVariable["varfinaloriginalname",""] AND 
+SetVariable["varIsPrimary",GetRelationshipAttributeValue["_DEFAULT","_DEFAULT","hasimages","image",ITERATIONITEM,"thgrelisprimary"]] AND
+
+SetVariable["varoriginalfilename",GetEntityAttributeValueById["_DEFAULT","_DEFAULT",ITERATIONITEM,"image","property_originalfilename"]] AND
+
+IIF[(IsNullOrEmpty[varoriginalfilename]=false OR IsNullOrEmpty[varIsPrimary]=false ),
+SetVariable["varnoofchar",Len[varoriginalfilename] - IndexOf[varoriginalfilename,"."]] AND
+SetVariable["varoriginalfilename",Left[varoriginalfilename,Len[varoriginalfilename] - varnoofchar]] ,false]AND
+
+
+SetVariable["varfinaloriginalname",Replace[varoriginalfilename,"__","_"]] AND 
+SetVariable["varCountOfUnderScore",Count[Replace[varfinaloriginalname,"_","||"]]] AND 
+
+
+IIF[varCountOfUnderScore=3,SetVariable["varIndexOfFinalString",IndexOf[varfinaloriginalname,"_"]+1] AND SetVariable["varfinaloriginalname",Substring[varfinaloriginalname,varIndexOfFinalString,Len[varfinaloriginalname]-varIndexOfFinalString]] AND SetVariable["varCountOfUnderScore",2],false] AND 
+
+IIF[varCountOfUnderScore=2,SetVariable["varIndexOfFinalString",IndexOf[varfinaloriginalname,"_"]+1] AND SetVariable["varGetDisplaySequence",Substring[varfinaloriginalname,varIndexOfFinalString,Len[varfinaloriginalname]-varIndexOfFinalString]],false] AND 
+
+IIF[IsNullOrEmpty[varGetDisplaySequence]=false AND ValidateByRegex[varGetDisplaySequence,"^[0-9]$"]=true,
+
+SetRelationshipAttribute["_DEFAULT","_DEFAULT",ITERATIONITEM,"hasimages","image","thgrelimagedisplaysequence",Concat["0",varGetDisplaySequence]] AND SetVariable["varContinue",false],false] AND 
+
+IIF[IsNullOrEmpty[varGetDisplaySequence]=false AND ValidateByRegex[varGetDisplaySequence,"^[0-9]+$"]=true AND varContinue=true,
+
+SetRelationshipAttribute["_DEFAULT","_DEFAULT",ITERATIONITEM,"hasimages","image","thgrelimagedisplaysequence",varGetDisplaySequence],false] 
+
+AND 
+IIF[IsNullOrEmpty[varoriginalfilename]=false,
+SetVariable["varlasttwocharoffilename",Right[varoriginalfilename,2]],false] AND 
+
+IIF[varlasttwocharoffilename = "_1" AND IsNullOrEmpty[varthumbnailId],
+SetVariable["varthumbnailId",ITERATIONITEM],false]
+AND 
+IIF[IsNullOrEmpty[varIsPrimary] = false AND varIsPrimary = "true",
+SetVariable["varPrimaryImageId",ITERATIONITEM],false]
+'] ,false] AND 
+
+
+IIF[varRelationship AND IsNullOrEmpty[varthumbnailId] AND IsNullOrEmpty[varPrimaryImageId] = false,
+SetVariable["varthumbnailId",varPrimaryImageId],false] AND
+
+
+IIF[varRelationship AND IsNullOrEmpty[varthumbnailId] = false,
+SetEntityProperty["thumbnailid",GetEntityAttributeValueById["_DEFAULT","_DEFAULT",varthumbnailId,"image","thumbnailid"]] AND
+SetRelationshipAttribute["_DEFAULT","_DEFAULT",varthumbnailId,"hasimages","image","thgrelisprimary","true"] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","dummythumbnail",varthumbnailId] ,false]
+
+AND 
+
+IIF[varImagesDeleted="true",
+
+DeleteAttribute["_DEFAULT","_DEFAULT","thumbnailimage"]
+
+,false]

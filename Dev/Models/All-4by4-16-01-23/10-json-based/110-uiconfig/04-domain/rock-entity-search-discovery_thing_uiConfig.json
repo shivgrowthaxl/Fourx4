@@ -1,0 +1,39 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-discovery_thing_uiConfig",
+            "name": "rock-entity-search-discovery_thing",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-09-28T01:12:38.945-0500",
+                "modifiedDate": "2022-09-28T01:12:38.945-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-search-discovery",
+                            "domain": "thing"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "selectedEntityTypes": [
+                                    "item"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

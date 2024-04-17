@@ -1,0 +1,506 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "allfourx4_BigCommerce_product_static_mappings",
+            "name": "allfourx4_BigCommerce_product_static_mappings",
+            "type": "mappings",
+            "data": {
+                "jsonData": {
+                    "mappings": [
+                        {
+                            "entityType": "item",
+                            "destination": "@path(entityid)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "id",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(sku)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgskutitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "collectionType": true,
+                            "entityType": "item",
+                            "destination": "@path(categories[%d])",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(categories)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(width)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgwidthtitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(brand_id)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgbrandidtitanbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(mpn)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgmpntitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(height)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgheighttitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(type)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thghiddenproducttype)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(page_title)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgmetatitle)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(meta_description)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgmetadescription)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(description)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgldescriptionws)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(page_title)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgmetatitle)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(description)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgldescriptionws)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(entitytype)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "type",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(name)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thglongname)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(condition)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgbccondition)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(weight)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgweighttitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(price)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgpriceretailtitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Deposit)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgdeposittitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Product Type)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgproducttype)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Stock Key (Titan))",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgstockkeytitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Bundle SKU Component)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgbundlecomponentbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,NG SKU)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgngskuwebsite)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Related Item)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgrelateditembc)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Alternate Item)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgalternateitembc)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Dismantling Vehicle)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgdismantlingproductbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Sub Domain Link)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgdismantlingvehicledomainlink)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@customField(custom_fields,Sub Domain Enquiry Link)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgdismantlingvehicledomainenquirylink)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(search_keywords)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgkeywords)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(depth)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thglengthtitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "collectionType": true,
+                            "entityType": "item",
+                            "destination": "@path(supplier_ids)",
+                            "isKeyValuePair": true,
+                            "id": 529609083,
+                            "source": "@attr(thgsuppliertitan)",
+                            "type": "referenceTypeData",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(cost_price)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgpriceretailtitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "decimal",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(retail_price)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgpriceretailtitan)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "decimal",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(custom_url.url)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgurlbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(gtin)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgbcgtin)",
+                            "isFormattingAppliedOnExports": false,
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(is_visible)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgvisibleonbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "boolean",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(availability)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgpurchaseonbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "referenceTypeData",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(price_hidden_label)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgcallforpricingtextws)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "referenceTypeData",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(is_price_hidden)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgcallforpricingtogglews)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "boolean",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(order_quantity_minimum)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgminquantityws)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "integer",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "entityType": "item",
+                            "destination": "@path(order_quantity_maximum)",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgmaxquantityws)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "integer",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        },
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@path(availability_description)",
+                            "externalAction": "setEmpty",
+                            "isKeyValuePair": true,
+                            "id": -505962659,
+                            "source": "@attr(thgavailbilitytextbc)",
+                            "isFormattingAppliedOnExports": false,
+                            "type": "string",
+                            "hasUOM": false,
+                            "isLocalizable": false
+                        }
+                    ],
+                    "relationshipMappings": [
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@path(image[%d].url)",
+                            "isKeyValuePair": true,
+                            "source": "@relAttr(hasimages,imageurl)",
+                            "locale": "en-US",
+                            "hasUOM": false,
+                            "enabled": true
+                        },
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@path(image[%d].id)",
+                            "isKeyValuePair": true,
+                            "source": "@relAttr(hasimages,imageid)",
+                            "locale": "en-US",
+                            "hasUOM": false,
+                            "enabled": true
+                        },
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@path(image[%s].is_thumbnail)",
+                            "isKeyValuePair": true,
+                            "source": "@relAttr(hasimages,thgrelisprimary)",
+                            "locale": "en-US",
+                            "hasUOM": false,
+                            "enabled": true
+                        },
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@path(image[%s].description)",
+                            "isKeyValuePair": true,
+                            "source": "@relAttr(hasimages,imagedesc)",
+                            "locale": "en-US",
+                            "hasUOM": false,
+                            "enabled": true
+                        },
+                        {
+                            "collectionType": false,
+                            "entityType": "item",
+                            "destination": "@path(image[%s].sort_order)",
+                            "isKeyValuePair": true,
+                            "source": "@relAttr(hasimages,thgrelimagedisplaysequence)",
+                            "locale": "en-US",
+                            "hasUOM": false,
+                            "enabled": true
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

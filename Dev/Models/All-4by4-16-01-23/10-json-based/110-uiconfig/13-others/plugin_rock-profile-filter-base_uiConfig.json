@@ -1,0 +1,117 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_rock-profile-filter-base_uiConfig",
+            "name": "plugin_rock-profile-filter",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.657+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-profile-filter",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "supportedDomains": [
+                                    {
+                                        "id": "thing",
+                                        "title": "Thing",
+                                        "value": "Thing"
+                                    },
+                                    {
+                                        "id": "location",
+                                        "title": "Location",
+                                        "value": "Location"
+                                    },
+                                    {
+                                        "id": "party",
+                                        "title": "Party",
+                                        "value": "Party"
+                                    },
+                                    {
+                                        "id": "digitalAsset",
+                                        "title": "Digital Asset",
+                                        "value": "Digital Asset"
+                                    }
+                                ],
+                                "relationshipSplitListConfig": {
+                                    "tabular": {
+                                        "settings": {
+                                            "idField": "name",
+                                            "isMultiSelect": true
+                                        },
+                                        "fields": {
+                                            "externalName": {
+                                                "filterable": true,
+                                                "readFrom": "properties",
+                                                "displaySequence": 10,
+                                                "name": "externalName",
+                                                "header": "{[NamTxt]}",
+                                                "sortable": true
+                                            }
+                                        }
+                                    },
+                                    "viewMode": "Tabular"
+                                },
+                                "attributeSplitListConfig": {
+                                    "allowSelectedRecordsReorder": true,
+                                    "tabular": {
+                                        "settings": {
+                                            "idField": "name",
+                                            "isMultiSelect": true
+                                        },
+                                        "fields": {
+                                            "groupName": {
+                                                "filterable": true,
+                                                "readFrom": "properties",
+                                                "displaySequence": 20,
+                                                "name": "groupName",
+                                                "header": "{[GrpTxt]}",
+                                                "sortable": true
+                                            },
+                                            "externalName": {
+                                                "filterable": true,
+                                                "readFrom": "properties",
+                                                "displaySequence": 10,
+                                                "name": "externalName",
+                                                "header": "{[NamTxt]}",
+                                                "sortable": true
+                                            },
+                                            "id": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "readFrom": "properties",
+                                                "displaySequence": 5,
+                                                "name": "id",
+                                                "header": "{[IdTxt]}",
+                                                "sortable": false
+                                            }
+                                        }
+                                    },
+                                    "viewMode": "Tabular"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

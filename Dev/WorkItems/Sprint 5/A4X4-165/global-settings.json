@@ -1,0 +1,34 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "global-settings_uiConfig",
+            "name": "global-settings",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "global-settings"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "dataDefaults": {
+                                    "entityTypes": {
+                                        "thing": [
+                                            "item"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

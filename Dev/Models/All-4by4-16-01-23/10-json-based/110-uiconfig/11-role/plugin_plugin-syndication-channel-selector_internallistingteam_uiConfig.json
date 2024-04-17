@@ -1,0 +1,40 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-syndication-channel-selector_internallistingteam_uiConfig",
+            "name": "plugin_plugin-syndication-channel-selector_internallistingteam",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-13T04:13:36.228+1100",
+                "modifiedDate": "2023-01-13T04:13:36.228+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "component": "plugin-syndication-channel-selector",
+                            "role": "internallistingteam"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "channelids": [
+                                    "rs-bigcommerce"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

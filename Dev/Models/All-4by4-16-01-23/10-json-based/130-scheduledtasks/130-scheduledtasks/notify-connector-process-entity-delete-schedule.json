@@ -1,0 +1,77 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "scheduleObjects",
+        "responseObjectName": "response"
+    },
+    "scheduleObjects": [
+        {
+            "id": "notify-connector-process-entity-delete-schedule",
+            "name": "Notifying Service provider - Connector",
+            "type": "scheduleobject",
+            "properties": {
+                "enabled": true,
+                "createdService": "scheduleObjectManageService",
+                "createdBy": "system_user",
+                "modifiedService": "scheduleObjectManageService",
+                "modifiedBy": "system_user",
+                "createdDate": "2023-01-08T01:16:12.470+1100",
+                "modifiedDate": "2023-01-08T01:16:12.470+1100"
+            },
+            "data": {
+                "attributes": {
+                    "scheduleType": {
+                        "values": [
+                            {
+                                "value": "fixedRate",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    },
+                    "scheduleTaskName": {
+                        "values": [
+                            {
+                                "value": "notify-delete-entity-process-window",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    },
+                    "scheduleTaskUrl": {
+                        "values": [
+                            {
+                                "value": "http://rdp-rest:8085/allfourx4ds/api/connectorService/notifytaskstatus",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    }
+                },
+                "jsonData": {
+                    "scheduleTaskPayload": {
+                        "params": {
+                            "rsconnect": {
+                                "profiles": [
+                                    "sys_notify_entity_delete_base"
+                                ]
+                            }
+                        }
+                    },
+                    "scheduleConfiguration": {
+                        "authContext": {
+                            "x-rdp-userRoles": "admin",
+                            "x-rdp-clientId": "rdpclient",
+                            "x-rdp-userid": "system_user",
+                            "x-rdp-useremail": "system",
+                            "x-rdp-ownershipdata": "",
+                            "x-rdp-username": "system",
+                            "x-rdp-tenantId": "allfourx4ds"
+                        },
+                        "intervalInMins": 180
+                    }
+                }
+            }
+        }
+    ]
+}

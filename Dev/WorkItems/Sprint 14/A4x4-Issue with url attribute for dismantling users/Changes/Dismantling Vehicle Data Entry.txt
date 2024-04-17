@@ -1,0 +1,26 @@
+~BR : dismantlingvehicledataBR : BR- Dismantling Vehicle Data Entry~
+varattribute:="thgstockkeytitan||thgskutitan||thgdismantlingproduct||thgdismantlingvehicledomainlink||thgdismantlingvehicledomainenquirylink||thgurl||thgshortnamedismantlingvehicle||thgmetadescription||thglongname||thgmetatitle||thgwebsitecategories||thgkeywords";
+vardismantlingvehicle:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproduct"];
+varUrl:=GetAttributeValue["_DEFAULT","_DEFAULT","thgurl"];
+varIsError:="false";
+varDisclaimer:=GetAttributeValues["_DEFAULT","_DEFAULT","thgdisclaimers"];
+varPartial:=GetAttributeValue["_DEFAULT","_DEFAULT","thgpartial"];
+
+ITERATE[varattribute,
+'(IIF[ValidateEmptyAttributes["_DEFAULT","_DEFAULT",ITERATIONITEM] AND vardismantlingvehicle=true,
+AddAttributeError["_DEFAULT","_DEFAULT","Req001","",ITERATIONITEM],
+AddAttributeInformation["_DEFAULT","_DEFAULT","SYS001","",ITERATIONITEM]])']AND
+
+IIF[IsNullOrEmpty[varUrl] = false AND
+   vardismantlingvehicle=true AND
+   varPartial<>"true" AND
+   Contains["suitable-for",varUrl]=false AND
+   Contains["Main Disclaimer",varDisclaimer], AddAttributeError["_DEFAULT","_DEFAULT","URL must contain 'suitable-for' ","Invalid URL","thgurl"] AND
+   SetVariable["varIsError","true"] ,false] AND
+   
+   IIF[IsNullOrEmpty[varUrl] = false AND
+   vardismantlingvehicle=true AND
+   ValidateByRegex[GetAttributeValue["_DEFAULT","_DEFAULT","thgurl"],"^(https:\/\/www.allfourx4.com.au\/)[-a-zA-Z0-9\-]*"] = false, AddAttributeError["_DEFAULT","_DEFAULT","URL should not contain invalid character","Invalid URl","thgurl"] AND
+   SetVariable["varIsError","true"] ,false] AND
+   IIF[varIsError = "false", AddAttributeInformation["_DEFAULT","_DEFAULT","Valid URL","Valid URL","thgurl"]
+,false]

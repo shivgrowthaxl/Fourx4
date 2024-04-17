@@ -1,0 +1,76 @@
+{
+                "id": "rock-entity-search-result-actions_app-search-syndication_uiConfig",
+                "name": "rock-entity-search-result-actions_app-search-syndication-systemadmin",
+                "type": "uiConfig",
+                "properties": {
+                    "createdService": "configurationManageService",
+                    "createdBy": "allfourx4.systemadmin@riversand.com_user",
+                    "modifiedService": "configurationManageService",
+                    "modifiedBy": "allfourx4.systemadmin@riversand.com_user",
+                    "createdDate": "2023-05-27T17:24:34.994+1000",
+                    "modifiedDate": "2023-05-27T17:24:34.994+1000"
+                },
+                "data": {
+                    "contexts": [
+                        {
+                            "context": {
+                                "app": "app-search-syndication",
+                                "component": "rock-entity-search-result-actions",
+                                "domain": "_DEFAULT",
+                                "entityType": "_DEFAULT",
+                                "relationship": "_DEFAULT",
+                                "role": "_DEFAULT",
+                                "tenant": "_DEFAULT",
+                                "user": "_DEFAULT"
+                            },
+                            "jsonData": {
+                                "config": {
+                                    "toolbarConfig": {
+                                        "buttonItems": {
+                                            "basic": {
+                                                "buttons": {
+                                                    "pageRange": {
+                                                        "visible": true
+                                                    },
+                                                    "download": {
+                                                        "visible": true,
+                                                        "actions": {
+                                                            "download-in-excel": {
+                                                                "visible": false
+                                                            },
+                                                            "download-in-csv": {
+                                                                "visible": false
+                                                            },
+                                                            "download-hub-status": {
+                                                                "visible": true
+                                                            }
+                                                        }
+                                                    },
+                                                    "upload": {
+                                                        "visible": false
+                                                    },
+                                                    "bulkedit": {
+                                                        "visible": true
+                                                    },
+                                                    "inlinebulkedit": {
+                                                        "visible": true
+                                                    },
+                                                    "bulkdelete": {
+                                                        "visible": false
+                                                    },
+                                                    "refresh": {
+                                                        "visible": true
+                                                    },
+                                                    "quickmanage": {
+                                                        "visible": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }

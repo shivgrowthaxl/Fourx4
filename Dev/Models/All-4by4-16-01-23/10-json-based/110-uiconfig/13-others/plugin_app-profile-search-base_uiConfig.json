@@ -1,0 +1,158 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_app-profile-search-base_uiConfig",
+            "name": "plugin_app-profile-search",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.606+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "app-profile-search",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "maxAllowedProfilesForDelete": 20,
+                                "gridConfig": {
+                                    "filterQueryVisible": true,
+                                    "pageSize": 50,
+                                    "readOnly": true,
+                                    "advanceSelectionOptions": [
+                                        {
+                                            "mode": "count",
+                                            "label": "{[SelTop20]}",
+                                            "itemCount": "20"
+                                        },
+                                        {
+                                            "mode": "count",
+                                            "label": "{[SelTop50]}",
+                                            "itemCount": "50"
+                                        },
+                                        {
+                                            "mode": "query",
+                                            "label": "{[SRASAllLbl]}"
+                                        }
+                                    ],
+                                    "maxRecordsSize": 200,
+                                    "viewConfig": {
+                                        "toolbarConfig": {
+                                            "buttonItems": {
+                                                "basic": {
+                                                    "buttons": {
+                                                        "refresh": {
+                                                            "visible": true,
+                                                            "displaySequence": 100,
+                                                            "name": "refresh",
+                                                            "icon": "pebble-icon:refresh",
+                                                            "tooltip": "{[RfsTxt]}",
+                                                            "text": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "tabular": {
+                                            "settings": {},
+                                            "fieldChanges": {}
+                                        }
+                                    },
+                                    "viewMode": "Tabular",
+                                    "pageRangeVisible": true,
+                                    "mode": "Read",
+                                    "advanceSelectionEnabled": true,
+                                    "itemConfig": {
+                                        "isMultiSelect": true,
+                                        "fields": {
+                                            "profileType": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "name": "profileType",
+                                                "width": 8,
+                                                "header": "{[PTTxt]}",
+                                                "sortable": false
+                                            },
+                                            "service": {
+                                                "filterable": true,
+                                                "visible": true,
+                                                "isContextDataColumn": true,
+                                                "name": "service",
+                                                "width": 8,
+                                                "header": "{[ITTxt]}",
+                                                "sortable": false,
+                                                "columnFilterEntityType": "rsInternalSysReferenceDataIntegrationProfileServiceType"
+                                            },
+                                            "isEnabled": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "name": "isEnabled",
+                                                "header": "{[EnaTxt]}",
+                                                "sortable": false
+                                            },
+                                            "name": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "name": "name",
+                                                "width": 200,
+                                                "header": "{[PNTxt]}",
+                                                "linkTemplate": "app-profile-manage?id={id}&mode=edit",
+                                                "sortable": false
+                                            },
+                                            "format": {
+                                                "filterable": true,
+                                                "visible": true,
+                                                "isContextDataColumn": true,
+                                                "name": "format",
+                                                "width": 8,
+                                                "header": "{[ForTxt]}",
+                                                "sortable": false,
+                                                "columnFilterEntityType": "rsInternalSysReferenceDataIntegrationProfileFormat"
+                                            },
+                                            "channel": {
+                                                "filterable": true,
+                                                "visible": true,
+                                                "isContextDataColumn": true,
+                                                "name": "channel",
+                                                "header": "{[ChlTxt]}",
+                                                "sortable": false,
+                                                "columnFilterEntityType": "rsInternalSysReferenceDataIntegrationProfileChannel"
+                                            },
+                                            "isOverridable": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "name": "isOverridable",
+                                                "header": "{[OveTxt]}",
+                                                "sortable": false
+                                            }
+                                        }
+                                    },
+                                    "schemaType": "attribute",
+                                    "disableSelectAll": false,
+                                    "recordSelectionAllowed": true
+                                },
+                                "maxAllowedProfilesForEnableDisable": 20
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

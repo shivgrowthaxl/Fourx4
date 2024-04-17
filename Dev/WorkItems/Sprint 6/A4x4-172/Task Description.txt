@@ -1,0 +1,7 @@
+Brand [thgbrandtitan] in our PIM have been made as reference data. We will create Brand on BC side fill the data in PIM with same ID and name as on BC. 
+
+Map Big Commerce Brand ID [thgbrandidtitanbc] to Native Brand attribute [brand_id] on Big Commerce based on id.
+
+Verify the output on BC and then we can remove custom attribute (brand) from BC side.
+
+**For Auto-syndication verify conditions in the task A4x4-153.

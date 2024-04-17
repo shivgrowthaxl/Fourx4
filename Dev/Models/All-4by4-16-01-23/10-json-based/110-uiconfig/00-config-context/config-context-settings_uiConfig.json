@@ -1,0 +1,53 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "config-context-settings_uiConfig",
+            "name": "config-context-settings",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-07-18T00:32:50.524-0500",
+                "modifiedDate": "2022-07-18T00:32:50.524-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "_DEFAULT",
+                            "component": "config-context-settings",
+                            "domain": "_DEFAULT",
+                            "entityType": "_DEFAULT",
+                            "relationship": "_DEFAULT",
+                            "role": "_DEFAULT",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "contextSchema": {
+                                    "app": "_DEFAULT",
+                                    "component": "_DEFAULT",
+                                    "role": "_DEFAULT",
+                                    "entityType": "_DEFAULT",
+                                    "domain": "_DEFAULT",
+                                    "relationship": "_DEFAULT",
+                                    "user": "_DEFAULT",
+                                    "tenant": "_DEFAULT"
+                                },
+                                "coalescePath": "component>>tenant>>domain>>app>>entityType>>relationship>>role>>user"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

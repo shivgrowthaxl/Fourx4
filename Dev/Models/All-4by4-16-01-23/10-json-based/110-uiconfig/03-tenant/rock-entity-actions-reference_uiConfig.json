@@ -1,0 +1,125 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-actions-reference_uiConfig",
+            "name": "rock-entity-actions-reference",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-07-27T06:27:05.249-0500",
+                "modifiedDate": "2022-07-27T06:27:05.249-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "Domain": "reference",
+                            "component": "rock-entity-actions",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "toolbarConfig": {
+                                    "buttonItems": {
+                                        "basic": {
+                                            "buttons": {
+                                                "download": {
+                                                    "visible": true,
+                                                    "displaySequence": 50,
+                                                    "name": "download",
+                                                    "tooltip": "{[DwnTxt]}",
+                                                    "icon": "pebble-icon:download",
+                                                    "text": "",
+                                                    "actions": {
+                                                        "download-in-excel": {
+                                                            "visible": true,
+                                                            "cop-context": {
+                                                                "subtype": "User",
+                                                                "service": "ENTITY_EXPORT",
+                                                                "channel": "UI",
+                                                                "format": "Excel",
+                                                                "source": "internal",
+                                                                "order": 10
+                                                            },
+                                                            "name": "download in Excel",
+                                                            "icon": "pebble-icon:download-excel",
+                                                            "eventName": "action-download",
+                                                            "text": "{[BADELbl]}",
+                                                            "componentName": "rock-wizard-entity-download",
+                                                            "intent": "read"
+                                                        },
+                                                        "download-in-csv": {
+                                                            "visible": true,
+                                                            "cop-context": {
+                                                                "subtype": "User",
+                                                                "service": "ENTITY_EXPORT",
+                                                                "channel": "UI",
+                                                                "format": "DSV",
+                                                                "source": "internal",
+                                                                "order": 10
+                                                            },
+                                                            "name": "download in CSV",
+                                                            "icon": "pebble-icon:text",
+                                                            "eventName": "action-download",
+                                                            "text": "{[BADCLbl]}",
+                                                            "componentName": "rock-wizard-entity-download",
+                                                            "intent": "read"
+                                                        }
+                                                    }
+                                                },
+                                                "edit": {
+                                                    "visible": true,
+                                                    "displaySequence": 10,
+                                                    "name": "edit",
+                                                    "icon": "pebble-icon:edit",
+                                                    "tooltip": "{[EdiTxt]}",
+                                                    "text": "",
+                                                    "intent": "write"
+                                                },
+                                                "upload": {
+                                                    "visible": true,
+                                                    "displaySequence": 40,
+                                                    "name": "upload",
+                                                    "icon": "pebble-icon:publish",
+                                                    "tooltip": "{[UplTxt]}",
+                                                    "text": "",
+                                                    "intent": "write"
+                                                },
+                                                "refresh": {
+                                                    "visible": true,
+                                                    "displaySequence": 70,
+                                                    "name": "refresh",
+                                                    "icon": "pebble-icon:refresh",
+                                                    "tooltip": "{[RfsTxt]}",
+                                                    "text": "",
+                                                    "intent": "read"
+                                                },
+                                                "delete": {
+                                                    "visible": false,
+                                                    "displaySequence": 20,
+                                                    "name": "delete",
+                                                    "icon": "pebble-icon:delete",
+                                                    "tooltip": "{[DltTxt]}",
+                                                    "text": "",
+                                                    "intent": "write"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

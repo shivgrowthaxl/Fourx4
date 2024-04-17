@@ -1,0 +1,44 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_contentapprover_uiConfig",
+            "name": "rock-navmenu_contentapprover",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-12T16:47:14.677+1100",
+                "modifiedDate": "2023-01-12T16:47:14.677+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-navmenu",
+                            "role": "contentapprover"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "syndicationDashboard": {
+                                    "dataRoute": "syndication-dashboard",
+                                    "visible": true,
+                                    "displaySequence": 160,
+                                    "name": "syndication-dashboard",
+                                    "icon": "pebble-icon:allfourx4ds-syndicationDashboard-icon",
+                                    "title": "Syndication Dashboard"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

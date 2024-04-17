@@ -1,0 +1,71 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-entity-discovery_savedSearch_rs0hQMetlgCmaI",
+            "name": "savedsearch_searchbundlecomponents(titan)toupdateshortname",
+            "type": "savedSearch",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2023-01-12T17:17:50.470+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-discovery",
+                            "component": "saved-search",
+                            "createdUser": "systemadmin.allfourx4ds@riversand.com_user",
+                            "domain": "thing",
+                            "entityType": "_DEFAULT",
+                            "role": "_DEFAULT",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "searchname": "savedsearch_searchbundlecomponents(titan)toupdateshortname",
+                                "accesstype": "_ALL",
+                                "role": "_ALL",
+                                "displayQuery": "show \"Item\"",
+                                "nestedAttributesWithSameRowFilter": [],
+                                "icon": "pebble-icon:sandbox-search",
+                                "governData": {},
+                                "searchid": "app-entity-discovery_savedSearch_rs0hQMetlgCmaI",
+                                "createdby": "systemadmin.allfourx4ds@riversand.com_user",
+                                "internalQuery": "!%&show&%! item",
+                                "domain": "thing",
+                                "name": "Search Bundle Components(Titan) to update short name",
+                                "id": "rskjEUK1k4wEMt",
+                                "ownershipData": "",
+                                "dependencyData": {},
+                                "isFavourite": false,
+                                "dimensions": {
+                                    "source": [
+                                        {
+                                            "id": "internal",
+                                            "title": "Internal",
+                                            "type": "source"
+                                        }
+                                    ],
+                                    "locale": [
+                                        {
+                                            "id": "en-US",
+                                            "title": "English - United States",
+                                            "type": "locale"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

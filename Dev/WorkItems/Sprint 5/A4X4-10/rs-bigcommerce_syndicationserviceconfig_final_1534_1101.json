@@ -1,0 +1,102 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rs-bigcommerce_syndicationserviceconfig",
+            "name": "BigCommerce",
+            "type": "syndicationserviceconfig",
+            "properties": {
+                "isEnabled": true,
+                "hub": "rshub",
+                "syndicationservicetype": "syndication-ecommerce",
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-12-09T02:13:31.423+1100",
+                "modifiedDate": "2022-12-09T02:13:31.423+1100"
+            },
+            "data": {
+                "jsonData": {
+                    "settings": {
+                        "rsclientsecret": "c3c2ce49cac21ef40ba8818fe1e38fe627184359e7c2f306d2c15bb0bc971cc5",
+                        "authtoken": "7v48japlyhx9imrbfqz8hys83phyoev",
+                        "urlshortener": "https://connectorsglobalfunctionapp.azurewebsites.net/api/UrlShortener?code=cEILkjHhcISvArYnn1qLOu9H/3b4RT0XT475FZEFaSrS2lJLLAJfZg==",
+                        "storeid": "7rkpjyhhds",
+                        "rsclientid": "r7z4jwo5ow4pzk3ci98z8b6x5ijljm0",
+                        "categoryAttributeName": "thgwebsitecategories",
+                        "categoryRootNode": "webtaxonomyroot",
+                        "baseurl": "https://api.bigcommerce.com/stores",
+                        "optionsattribute": "variantoptions",
+                        "isoptionvalues": false,
+                        "categoryurl": "v3/catalog/categories",
+                        "syndicateReadyEntitiesOnly": "false",
+                        "producturl": "v3/catalog/products"
+                    },
+                    "hub": "RsHub",
+                    "isEnabled": "true",
+                    "syndicationservicetype": "syndication-ecommerce",
+                    "actions": [
+                        {
+                            "syndicate": {
+                                "endpoint": "syndicate",
+                                "isScheduled": false,
+                                "title": "Syndicate",
+                                "allowedEntityTypes": [
+                                    "item"
+                                ]
+                            }
+                        },
+                        {
+                            "withdraw": {
+                                "endpoint": "withdraw",
+                                "isScheduled": false,
+                                "title": "Withdraw",
+                                "allowedEntityTypes": [
+                                    "item"
+                                ]
+                            }
+                        }
+                    ],
+                    "syndicationSourceContext": {
+                        "contextName": "self",
+                        "contextValue": "self"
+                    },
+                    "profilecontexts": [
+                        {
+                            "syndicate": {
+                                "app": "Connector",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "BIGCOMMERCE_SYNDICATE_PRODUCT",
+                                "format": "JSON",
+                                "source": "internal"
+                            }
+                        },
+                        {
+                            "withdraw": {
+                                "app": "Connector",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "BIGCOMMERCE_WITHDRAW_VARIANT",
+                                "format": "JSON",
+                                "source": "internal"
+                            }
+                        },
+                        {
+                            "categorySyndicate": {
+                                "app": "RSConnect",
+                                "service": "ENTITY_EXPORT",
+                                "channel": "BIGCOMMERCE_SYNDICATE_CATEGORY",
+                                "format": "JSON",
+                                "source": "internal"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

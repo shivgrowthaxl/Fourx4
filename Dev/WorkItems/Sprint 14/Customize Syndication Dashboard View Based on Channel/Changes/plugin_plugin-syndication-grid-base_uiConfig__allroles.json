@@ -1,0 +1,285 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-syndication-grid-base_uiConfig_allroles",
+            "name": "plugin_plugin-syndication-grid__allroles",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "app": "_DEFAULT",
+                            "component": "plugin-syndication-grid",
+                            "domain": "_DEFAULT",
+                            "entityType": "_DEFAULT",
+                            "relationship": "_DEFAULT",
+                            "role": "_DEFAULT",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "summaryConfig": [
+                                    {
+                                        "color": "#036bc3",
+                                        "id": "total_channels",
+                                        "title": "{[Toatl Channels]}",
+                                        "status": "total_channels"
+                                    },
+                                    {
+                                        "color": "#036bc3",
+                                        "id": "total_syndicateItems",
+                                        "title": "{[Total Items Syndicated]}",
+                                        "status": "all"
+                                    },
+                                    {
+                                        "color": "#f78e1e",
+                                        "id": "total_erros",
+                                        "title": "{[Total Errors]}",
+                                        "status": "error"
+                                    },
+                                    {
+                                        "color": "#036bc3",
+                                        "id": "total_withdrawItems",
+                                        "title": "{[Toatl Items Withdrawn]}",
+                                        "status": "withdrawSuccess"
+                                    }
+                                ],
+                                "gridColumns": [
+                                    {
+                                        "filterable": false,
+                                        "headerName": "Channel Name",
+                                        "field": "channelName",
+                                        "headerTooltip": "Channel Name",
+                                        "isMetaDataColumn": false,
+                                        "tooltipField": "channelName",
+                                        "width": 15,
+                                        "suppressSizeToFit": true,
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "channelName",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    },
+                                    {
+                                        "filterable": false,
+                                        "headerName": "{[NewItmTxt]}",
+                                        "field": "itemStateNew",
+                                        "headerTooltip": "{[NewItmTxt]}",
+                                        "isMetaDataColumn": false,
+                                        "tooltipField": "itemStateNew",
+                                        "width": 15,
+                                        "suppressSizeToFit": true,
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "itemStateNew",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    },
+                                    {
+                                        "filterable": false,
+                                        "headerName": "{[ItmPubSucMsg]}",
+                                        "field": "channelStateListedsuccess",
+                                        "headerTooltip": "{[ItmPubSucMsg]}",
+                                        "isMetaDataColumn": false,
+                                        "tooltipField": "channelStateListedsuccess",
+                                        "suppressSizeToFit": true,
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "channelStateListedsuccess",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    },
+                                    {
+                                        "filterable": false,
+                                        "headerName": "{[ItmValFaiMsg]}",
+                                        "field": "validationStateError",
+                                        "headerTooltip": "{[ItmValFaiMsg]}",
+                                        "isMetaDataColumn": false,
+                                        "flex": 1,
+                                        "tooltipField": "validationStateError",
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "validationStateError",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    },
+                                    {
+                                        "filterable": false,
+                                        "headerName": "{[ItmPubFaiMsg]}",
+                                        "field": "syndicationStateError",
+                                        "headerTooltip": "{[ItmPubFaiMsg]}",
+                                        "isMetaDataColumn": false,
+                                        "flex": 1,
+                                        "tooltipField": "syndicationStateError",
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "syndicationStateError",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    },
+                                    {
+                                        "filterable": false,
+                                        "headerName": "{[ReaToPubTxt]}",
+                                        "field": "itemStateReady",
+                                        "headerTooltip": "{[ReaToPubTxt]}",
+                                        "isMetaDataColumn": false,
+                                        "flex": 1,
+                                        "tooltipField": "itemStateReady",
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "itemStateReady",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    },
+                                    {
+                                        "filterable": false,
+                                        "headerName": "{[WitDrwItesTxt]}",
+                                        "field": "channelStateWithdraw",
+                                        "headerTooltip": "{[WitDrwItesTxt]}",
+                                        "isMetaDataColumn": false,
+                                        "flex": 1,
+                                        "tooltipField": "channelStateWithdraw",
+                                        "minWidth": 200,
+                                        "sortable": true,
+                                        "colId": "channelStateWithdraw",
+                                        "icons": {
+                                            "sortDescending": "<pebble-icon icon=\"pebble-icon:Down\"></pebble-icon>",
+                                            "sortAscending": "<pebble-icon icon=\"pebble-icon:Up\"></pebble-icon>"
+                                        }
+                                    }
+                                ],
+                                "connectorStates": {
+                                    "channelStateWithdraw": {
+                                        "color": "#036bc3",
+                                        "state": "channelState",
+                                        "title": "{[WitDrwItesTxt]}",
+                                        "status": [
+                                            "withdrawPending",
+                                            "withdrawSuccess"
+                                        ]
+                                    },
+                                    "itemStateNew": {
+                                        "color": "#036bc3",
+                                        "state": "itemState",
+                                        "title": "{[NewItmTxt]}",
+                                        "status": [
+                                            "new"
+                                        ]
+                                    },
+                                    "channelStateListedsuccess": {
+                                        "color": "#036bc3",
+                                        "state": "channelState",
+                                        "title": "{[ItmPubSucMsg]}",
+                                        "status": [
+                                            "listedSuccess"
+                                        ]
+                                    },
+                                    "itemStateReady": {
+                                        "color": "#036bc3",
+                                        "state": "itemState",
+                                        "title": "{[ReaToPubTxt]}",
+                                        "status": [
+                                            "ready"
+                                        ]
+                                    },
+                                    "validationStateError": {
+                                        "color": "#f78e1e",
+                                        "state": "validationState",
+                                        "title": "{[ItmValFaiMsg]}",
+                                        "status": [
+                                            "error"
+                                        ]
+                                    },
+                                    "syndicationStateError": {
+                                        "color": "#f78e1e",
+                                        "state": "syndicationState",
+                                        "title": "{[ItmPubFaiMsg]}",
+                                        "status": [
+                                            "error"
+                                        ]
+                                    }
+                                },
+                                "gridConfig": {
+                                    "filterQueryVisible": true,
+                                    "dataContexts": [],
+                                    "pageSize": 200,
+                                    "readOnly": true,
+                                    "applyContextCoalesce": false,
+                                    "advanceSelectionOptions": [],
+                                    "maxRecordsSize": 200,
+                                    "viewConfig": {
+                                        "toolbarConfig": {
+                                            "buttonItems": {
+                                                "basic": {
+                                                    "buttons": []
+                                                }
+                                            }
+                                        },
+                                        "tile": {
+                                            "settings": {
+                                                "titlePattern": "{entity.attributes.mdmid}",
+                                                "subTitlePattern": "{entity.attributes.thumbnailid} | {entity.attributes.mdmname} | {entity.attributes.description} | {entity.attributes.brand} | {entity.attributes.enabled} | {entity.attributes.status}",
+                                                "actions": {}
+                                            },
+                                            "fieldChanges": {}
+                                        },
+                                        "tabular": {
+                                            "settings": {},
+                                            "fieldChanges": {}
+                                        },
+                                        "list": {
+                                            "settings": {
+                                                "actions": {}
+                                            },
+                                            "fieldsChanges": {}
+                                        }
+                                    },
+                                    "viewMode": "Tabular",
+                                    "title": "Search results",
+                                    "myViews": {},
+                                    "pageRangeVisible": true,
+                                    "mode": "Read",
+                                    "advanceSelectionEnabled": false,
+                                    "itemConfig": {
+                                        "image": "productImageUrl",
+                                        "isMultiSelect": false,
+                                        "linkTemplate": "entity-manage?id={id}&type={type}",
+                                        "id": "id",
+                                        "title": "name",
+                                        "fields": {}
+                                    },
+                                    "maxAllowedRecordsToEdit": 20,
+                                    "applyLocaleCoalesce": false,
+                                    "schemaType": "attribute",
+                                    "applyInvalidValueStyle": true,
+                                    "disableSelectAll": true,
+                                    "recordSelectionAllowed": false,
+                                    "valueContexts": []
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

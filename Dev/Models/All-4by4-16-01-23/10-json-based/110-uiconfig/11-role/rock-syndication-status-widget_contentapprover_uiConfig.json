@@ -1,0 +1,59 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-syndication-status-widget_contentapprover_uiConfig",
+            "name": "rock-syndication-status-contentapprover_contentapprover",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-13T03:08:55.257+1100",
+                "modifiedDate": "2023-01-13T03:08:55.257+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-syndication-status-widget",
+                            "role": "contentapprover"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "connectorStates": {
+                                    "channelStateWithdraw": {
+                                        "visible": true
+                                    },
+                                    "itemStateNew": {
+                                        "visible": true
+                                    },
+                                    "channelStateListedsuccess": {
+                                        "visible": true
+                                    },
+                                    "channelStateListedpending": {
+                                        "visible": true
+                                    },
+                                    "itemStateReady": {
+                                        "visible": true
+                                    },
+                                    "validationStateError": {
+                                        "visible": true
+                                    },
+                                    "syndicationStateError": {
+                                        "visible": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

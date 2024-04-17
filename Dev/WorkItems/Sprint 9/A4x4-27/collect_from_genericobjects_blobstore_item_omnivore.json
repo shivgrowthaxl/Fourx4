@@ -1,0 +1,89 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "collect_from_genericobjects_blobstore_item_omnivore",
+            "name": "collect_from_genericobjects_blobstore_item_omnivore",
+            "type": "integrationprofile",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "RSConnect",
+                            "channel": "SCHEDULE_JOB",
+                            "format": "item_JSON",
+                            "order": "20",
+                            "role": "admin",
+                            "service": "ENTITY_EXPORT",
+                            "source": "internal",
+                            "subtype": "System",
+                            "user": "system"
+                        },
+                        "jsonData": {
+                            "transform": {
+                                "settings": {
+                                    "allowNullValues": "true"
+                                }
+                            },
+                            "integrationType": "System",
+                            "profileType": "custom",
+                            "isEnabled": "true",
+                            "publish": {
+                                "filter": {
+                                    "include": {},
+                                    "exclude": {}
+                                },
+                                "channel": [
+                                    {
+                                        "settings": {},
+                                        "type": "folderConnector"
+                                    }
+                                ],
+                                "format": {
+                                    "settings": {},
+                                    "type": "RSJSON",
+                                    "batchSize": 20,
+                                    "version": "1.1"
+                                },
+                                "isDataPersistent": "false"
+                            },
+                            "collect": {
+                                "filter": {
+                                    "include": {},
+                                    "exclude": {}
+                                },
+                                "channel": [
+                                    {
+                                        "settings": {
+                                            "scheduledPublish": true
+                                        },
+                                        "type": "genericObjectConnector"
+                                    }
+                                ],
+                                "format": {
+                                    "settings": {
+                                        "additionalSettings": {
+                                            "supportsCollection": "false",
+                                            "includeRelatedEntities": "false",
+                                            "encoding": "utf8",
+                                            "publishSyndicationProfile": "item_Override_Azure_Blob_JSON_Export_omnivore",
+                                            "includeRelatedEntityExternalIds": "true"
+                                        }
+                                    },
+                                    "type": "RSJSON",
+                                    "batchSize": 100,
+                                    "version": "1.1"
+                                },
+                                "isDataPersistent": "false"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

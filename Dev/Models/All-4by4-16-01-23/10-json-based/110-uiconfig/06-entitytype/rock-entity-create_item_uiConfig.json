@@ -1,0 +1,52 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-create_item_uiConfig",
+            "name": "rock-entity-create_item",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-07-19T04:04:24.825-0500",
+                "modifiedDate": "2022-07-19T04:04:24.825-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-create",
+                            "entityType": "item"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "properties": {
+                                    "matchConfig": {
+                                        "enable-match-step": true,
+                                        "allow-update": false,
+                                        "compare-title": "{[ECMCComTit]}",
+                                        "allow-create": true
+                                    },
+                                    "noOfColumns": 3,
+                                    "attributeNames": [
+                                        "thgcategorytitan",
+                                        "thgpartitemcodetitan",
+                                        "thgskutitan"
+                                    ],
+                                    "enableRelationshipsMatchMerge": false,
+                                    "doSyncValidation": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

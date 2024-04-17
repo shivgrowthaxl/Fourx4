@@ -1,0 +1,173 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-relationship-search-result_hasimages_dismantlingexternalteam_uiConfig",
+            "name": "rock-entity-relationship-search-result_hasimages_dismantlingexternalteam",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "_DEFAULT",
+                            "component": "rock-entity-relationship-search-result",
+                            "domain": "thing",
+                            "entityType": "_DEFAULT",
+                            "relationship": "hasimages",
+                            "role": "dismantlingexternalteam",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "governDataConfig": {
+                                    "visible": false
+                                },
+                                "gridConfig": {
+                                    "advanceSelectionEnabled": false,
+                                    "dataRequest": {
+                                        "typesCriterion": [
+                                            "image"
+                                        ]
+                                    },
+                                    "itemConfig": {
+                                        "sort": {
+                                            "default": [
+                                                {
+                                                    "field": "thgrelimagedisplaysequence",
+                                                    "sortType": "asc"
+                                                }
+                                            ]
+                                        },
+                                        "fields": {
+                                            "typeExternalName": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 20,
+                                                "name": "typeExternalName",
+                                                "sortable": false,
+                                                "isRelatedEntityAttribute": false
+                                            },
+                                            "thgrelimagedisplaysequence": {
+                                                "visible": true,
+                                                "name": "thgrelimagedisplaysequence",
+                                                "sortable": true
+                                            },
+                                            "entityTypeIcon": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "iconColumn": true,
+                                                "displaySequence": 5,
+                                                "name": "entityTypeIcon",
+                                                "sortable": false
+                                            },
+                                            "name": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 40,
+                                                "name": "name",
+                                                "sortable": false,
+                                                "isRelatedEntityAttribute": false
+                                            },
+                                            "id": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 30,
+                                                "name": "id",
+                                                "sortable": false,
+                                                "isRelatedEntityAttribute": false
+                                            },
+                                            "property_originalfilename": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 10,
+                                                "name": "property_originalfilename",
+                                                "sortable": false,
+                                                "isRelatedEntityAttribute": false
+                                            }
+                                        }
+                                    },
+                                    "actionEnabled": true,
+                                    "schemaType": "colModel",
+                                    "viewConfig": {
+                                        "tile": {
+                                            "settings": {
+                                                "titlePattern": "{entity.attributes.property_originalfilename}",
+                                                "subTitlePattern": "{entity.typeExternalName} | {entity.id}",
+                                                "actions": {
+                                                    "downloadOriginalAsset": {
+                                                        "visible": true,
+                                                        "name": "downloadOriginalAsset",
+                                                        "icon": "pebble-icon:download",
+                                                        "tooltip": "{[DwnOriAssTxt]}",
+                                                        "eventName": "download-original-asset",
+                                                        "text": ""
+                                                    }
+                                                }
+                                            },
+                                            "visible": true,
+                                            "fieldChanges": {}
+                                        },
+                                        "tabular": {
+                                            "settings": {
+                                                "actions": {
+                                                    "downloadOriginalAsset": {
+                                                        "visible": true,
+                                                        "name": "downloadOriginalAsset",
+                                                        "icon": "pebble-icon:download",
+                                                        "tooltip": "{[DwnOriAssTxt]}",
+                                                        "eventName": "download-original-asset",
+                                                        "text": "",
+                                                        "intent": "read"
+                                                    }
+                                                }
+                                            },
+                                            "visible": true,
+                                            "fieldChanges": {}
+                                        },
+                                        "list": {
+                                            "settings": {
+                                                "actions": {
+                                                    "downloadOriginalAsset": {
+                                                        "visible": true,
+                                                        "name": "downloadOriginalAsset",
+                                                        "icon": "pebble-icon:download",
+                                                        "tooltip": "{[DwnOriAssTxt]}",
+                                                        "eventName": "download-original-asset",
+                                                        "text": ""
+                                                    }
+                                                }
+                                            },
+                                            "visible": true,
+                                            "fieldChanges": {}
+                                        }
+                                    },
+                                    "viewMode": "Tile"
+                                },
+                                "businessActions": {
+                                    "basic": {
+                                        "visible": true,
+                                        "actions": {
+                                            "create-and-add": {
+                                                "visible": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

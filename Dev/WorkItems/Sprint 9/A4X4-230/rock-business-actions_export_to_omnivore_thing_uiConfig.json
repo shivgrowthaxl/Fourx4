@@ -1,0 +1,43 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-business-actions_export_to_omnivore_thing_uiConfig",
+            "name": "rock-business-actions_export_to_omnivore_thing",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-business-actions",
+                            "entityType": "item"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "actionGroups": {
+                                    "connectors": {
+                                        "actions": {
+                                            "re-publish-omnivore": {
+                                                "visible": true,
+                                                "name": "re-publish-omnivore",
+                                                "icon": "pebble-icon:send",
+                                                "eventName": "action-re-publish",
+                                                "text": "Export To Omnivore",
+                                                "componentName": "rock-wizard-re-publish",
+                                                "subComponentName": "re-publish-omnivore"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

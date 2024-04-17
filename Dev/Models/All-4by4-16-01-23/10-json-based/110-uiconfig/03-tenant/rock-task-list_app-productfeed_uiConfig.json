@@ -1,0 +1,42 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-task-list_app-productfeed_uiConfig",
+            "name": "rock-task-list_app-productfeed",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "system_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "system_user",
+                "createdDate": "2023-01-11T23:09:23.102+1100",
+                "modifiedDate": "2023-01-11T23:09:23.102+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-task-list",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "taskTypes": {
+                                    "taskappproductfeed": {
+                                        "visible": true,
+                                        "title": "App - Product Feed"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-header_thing_item_contentapprover_uiConfig",
+            "name": "rock-entity-header_thing_item_contentapprover",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-12T18:49:56.736+1100",
+                "modifiedDate": "2023-01-12T18:49:56.736+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-header",
+                            "domain": "thing",
+                            "entityType": "item",
+                            "role": "contentapprover"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "headerConfig": {
+                                    "thglistingstatus": {
+                                        "isUserAction": true,
+                                        "visible": true,
+                                        "attributeName": "thglistingstatus",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgisbundleproducttitan": {
+                                        "isUserAction": true,
+                                        "visible": true,
+                                        "attributeName": "thgisbundleproducttitan",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgpartial": {
+                                        "isUserAction": true,
+                                        "visible": true,
+                                        "attributeName": "thgpartial",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgbrandtitan": {
+                                        "isUserAction": true,
+                                        "visible": true,
+                                        "attributeName": "thgbrandtitan",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgmpntitan": {
+                                        "isUserAction": true,
+                                        "visible": true,
+                                        "attributeName": "thgmpntitan",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgcategorytitan": {
+                                        "isUserAction": true,
+                                        "visible": true,
+                                        "attributeName": "thgcategorytitan",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgpartitemcodetitan": {
+                                        "isUserAction": true,
+                                        "visible": false,
+                                        "attributeName": "thgpartitemcodetitan",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgpriceretailtitangst": {
+                                        "isUserAction": true,
+                                        "visible": false,
+                                        "attributeName": "thgpriceretailtitangst",
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgisdropshiptitan": {
+                                        "isUserAction": true,
+                                        "visible": false,
+                                        "attributeName": "thgisdropshiptitan",
+                                        "label": "{model.externalName}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

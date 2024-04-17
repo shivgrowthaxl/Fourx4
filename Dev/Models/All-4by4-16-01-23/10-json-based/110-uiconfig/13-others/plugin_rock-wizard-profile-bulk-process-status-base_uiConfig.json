@@ -1,0 +1,55 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_rock-wizard-profile-bulk-process-status-base_uiConfig",
+            "name": "plugin_rock-wizard-profile-bulk-process-status",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.766+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-wizard-profile-bulk-process-status",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "name": "rock-profile-bulk-process-status",
+                                "isBFV2Flow": true,
+                                "hideStepper": true,
+                                "label": "{[BlkProStaTit]}",
+                                "steps": {
+                                    "step-1-rock-bulk-edit-process-status": {
+                                        "component": {
+                                            "path": "/plugin-src/intprofilemanage/elements/rock-profile-bulk-process-status/rock-profile-bulk-process-status.js",
+                                            "name": "rock-profile-bulk-process-status"
+                                        },
+                                        "displaySequence": 10,
+                                        "name": "step-1-rock-profile-bulk-process-status",
+                                        "label": "{[BlkProStaTit]}",
+                                        "isMandatory": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

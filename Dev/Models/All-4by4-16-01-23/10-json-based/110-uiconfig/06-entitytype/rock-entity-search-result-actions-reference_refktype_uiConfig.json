@@ -1,0 +1,161 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-result-actions-reference_refktype_uiConfig",
+            "name": "rock-entity-search-result-actions-reference_refktype",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-07-27T06:31:19.129-0500",
+                "modifiedDate": "2022-07-27T06:31:19.129-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-search-result-actions",
+                            "domain": "referenceData",
+                            "entityType": "refktype"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "toolbarConfig": {
+                                    "buttonItems": {
+                                        "basic": {
+                                            "buttons": {
+                                                "download": {
+                                                    "visible": true,
+                                                    "displaySequence": 80,
+                                                    "name": "download",
+                                                    "tooltip": "{[DwnTxt]}",
+                                                    "icon": "pebble-icon:download",
+                                                    "text": "",
+                                                    "actions": {
+                                                        "download-in-excel": {
+                                                            "entities-download-limit": 10000,
+                                                            "visible": true,
+                                                            "cop-context": {
+                                                                "subtype": "User",
+                                                                "service": "ENTITY_EXPORT",
+                                                                "channel": "UI",
+                                                                "format": "Excel",
+                                                                "source": "internal",
+                                                                "order": 10
+                                                            },
+                                                            "name": "download in Excel",
+                                                            "icon": "pebble-icon:download-excel",
+                                                            "eventName": "action-download",
+                                                            "text": "{[BADELbl]}",
+                                                            "componentName": "rock-wizard-entity-download",
+                                                            "intent": "read"
+                                                        },
+                                                        "download-in-csv": {
+                                                            "entities-download-limit": 50000,
+                                                            "visible": true,
+                                                            "cop-context": {
+                                                                "subtype": "User",
+                                                                "service": "ENTITY_EXPORT",
+                                                                "channel": "UI",
+                                                                "format": "DSV",
+                                                                "source": "internal",
+                                                                "order": 10
+                                                            },
+                                                            "name": "download in CSV",
+                                                            "icon": "pebble-icon:text",
+                                                            "eventName": "action-download",
+                                                            "text": "{[BADCLbl]}",
+                                                            "componentName": "rock-wizard-entity-download",
+                                                            "intent": "read"
+                                                        },
+                                                        "download-hub-status": {
+                                                            "visible": false,
+                                                            "cop-context": {
+                                                                "app": "RSConnect",
+                                                                "role": "admin",
+                                                                "subtype": "User",
+                                                                "service": "ENTITY_EXPORT",
+                                                                "format": "GENERIC_OBJECT_EXCEL",
+                                                                "channel": "JOB",
+                                                                "source": "internal",
+                                                                "user": "system",
+                                                                "order": "10"
+                                                            },
+                                                            "name": "download hub status",
+                                                            "icon": "pebble-icon:download-excel",
+                                                            "eventName": "action-download",
+                                                            "text": "{[DwnHubStaTit]}",
+                                                            "componentName": "rock-wizard-entity-download",
+                                                            "intent": "read"
+                                                        }
+                                                    }
+                                                },
+                                                "upload": {
+                                                    "visible": true,
+                                                    "displaySequence": 70,
+                                                    "name": "upload",
+                                                    "icon": "pebble-icon:publish",
+                                                    "tooltip": "{[UplTxt]}",
+                                                    "text": ""
+                                                },
+                                                "bulkedit": {
+                                                    "visible": true,
+                                                    "displaySequence": 30,
+                                                    "name": "bulkedit",
+                                                    "icon": "pebble-icon:bulk-edit",
+                                                    "tooltip": "{[BulOpeTxt]}",
+                                                    "text": ""
+                                                },
+                                                "matchandmerge": {
+                                                    "dataRoute": "match-merge",
+                                                    "visible": false,
+                                                    "displaySequence": 60,
+                                                    "name": "matchandmerge",
+                                                    "icon": "pebble-icon:merge",
+                                                    "tooltip": "{[GolRecRevTxt]}",
+                                                    "threshold": 20,
+                                                    "text": ""
+                                                },
+                                                "inlinebulkedit": {
+                                                    "visible": false,
+                                                    "displaySequence": 20,
+                                                    "name": "inlinebulkedit",
+                                                    "icon": "pebble-icon:action-bulk-edit-inline",
+                                                    "tooltip": "{[SABETT]}",
+                                                    "text": ""
+                                                },
+                                                "bulkdelete": {
+                                                    "visible": true,
+                                                    "displaySequence": 50,
+                                                    "name": "bulkdelete",
+                                                    "icon": "pebble-icon:delete",
+                                                    "tooltip": "{[SABDTT]}",
+                                                    "text": ""
+                                                },
+                                                "quickmanage": {
+                                                    "visible": true,
+                                                    "displaySequence": 40,
+                                                    "name": "quickmanage",
+                                                    "icon": "pebble-icon:quick-manage",
+                                                    "tooltip": "{[QMTxt]}",
+                                                    "text": ""
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

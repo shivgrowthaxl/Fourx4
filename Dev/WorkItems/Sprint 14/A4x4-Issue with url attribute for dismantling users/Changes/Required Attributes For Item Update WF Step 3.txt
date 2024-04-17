@@ -1,0 +1,25 @@
+varRequiredAttributes:="thglisterinitial||thgcondition||thglongname||thgshortname||thgmetatitle||thgmetadescription||thgldescriptionws||thgkeywords||thgproducttype||thgcubicweighttitan||thgdisclaimers||thgngsku||thgproductnamingselection";
+     varshortname:=GetAttributeValue["_DEFAULT","_DEFAULT","thgshortname"];
+     varPartial:=GetAttributeValue["_DEFAULT","_DEFAULT","thgpartial"];
+     varDisclaimer:=GetAttributeValues["_DEFAULT","_DEFAULT","thgdisclaimers"];
+     varUrl:=GetAttributeValue["_DEFAULT","_DEFAULT","thgurl"];
+     varIsError:="false";
+     varthgapproveshortname:=GetAttributeValue["_DEFAULT","_DEFAULT","thgapproveshortname"];
+     vardismantlingvehicle:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproduct"];
+     ITERATE[varRequiredAttributes,'(IIF[ValidateEmptyAttributes["_DEFAULT","_DEFAULT",ITERATIONITEM], AddAttributeError["_DEFAULT","_DEFAULT","Req001","",ITERATIONITEM], AddAttributeInformation["_DEFAULT","_DEFAULT","SYS001","",ITERATIONITEM]])'] AND
+	     IIF[IsNullOrEmpty[varshortname] = false AND
+	     Len[varshortname] > 80, AddAttributeError["_DEFAULT","_DEFAULT","Max char limit for short name is 80","Max char limit for short name is 80","thgshortname"], AddAttributeInformation["_DEFAULT","_DEFAULT","SYS001","","thgshortname"]] AND
+	     IIF[IsNullOrEmpty[varUrl] = false AND
+	     vardismantlingvehicle<>true AND
+	      varPartial<>"true" AND
+	     Contains["suitable-for",varUrl]=false AND
+	     Contains["Main Disclaimer",varDisclaimer], AddAttributeError["_DEFAULT","_DEFAULT","URL must contain 'suitable-for' ","Invalid URL","thgurl"] AND
+	     SetVariable["varIsError","true"] ,false] AND
+	     IIF[IsNullOrEmpty[varUrl] = false AND
+	     vardismantlingvehicle<>true AND
+	     ValidateByRegex[GetAttributeValue["_DEFAULT","_DEFAULT","thgurl"],"^(https:\/\/www.allfourx4.com.au\/)[-a-zA-Z0-9\-]*"] = false, AddAttributeError["_DEFAULT","_DEFAULT","URL should not contain invalid character","Invalid URl","thgurl"] AND
+	     SetVariable["varIsError","true"] ,false] AND
+	     IIF[varIsError = "false", AddAttributeInformation["_DEFAULT","_DEFAULT","Valid URL","Valid URL","thgurl"] ,false] AND
+	     IIF[(varthgapproveshortname="false" OR
+	     IsNullOrEmpty[varthgapproveshortname]), AddAttributeError["_DEFAULT","_DEFAULT","GEN001","Valid Shortname should be True","thgapproveshortname"] ,false] AND
+	     IIF[varthgapproveshortname="true", AddAttributeInformation["_DEFAULT","_DEFAULT","SYS001","","thgapproveshortname"] ,false]

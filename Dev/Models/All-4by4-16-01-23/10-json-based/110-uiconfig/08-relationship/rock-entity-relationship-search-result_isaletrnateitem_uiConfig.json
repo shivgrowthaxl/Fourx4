@@ -1,0 +1,239 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-relationship-search-result_isaletrnateitem_uiConfig",
+            "name": "rock-entity-relationship-search-result_isaletrnateitem",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-10-18T01:12:19.487-0500",
+                "modifiedDate": "2022-10-18T01:12:19.487-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-relationship-search-result",
+                            "relationship": "isaletrnateitem"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "upDirectionConfig": {
+                                    "visible": "false",
+                                    "excludeNonContextual": false,
+                                    "gridConfig": {
+                                        "visible": true,
+                                        "title": "",
+                                        "fields": {
+                                            "name": {
+                                                "visible": false,
+                                                "isMetaDataColumn": true,
+                                                "name": "name",
+                                                "isRelatedEntityAttribute": false
+                                            }
+                                        },
+                                        "pageRangeVisible": true
+                                    },
+                                    "businessActions": {
+                                        "basic": {
+                                            "visible": true,
+                                            "actions": {
+                                                "add": {
+                                                    "visible": true,
+                                                    "name": "add",
+                                                    "icon": "pebble-icon:link",
+                                                    "eventName": "relationship-action-add",
+                                                    "text": "{[AddTxt]}",
+                                                    "intent": "write"
+                                                },
+                                                "create-and-add": {
+                                                    "visible": true,
+                                                    "name": "create-add",
+                                                    "icon": "pebble-icon:add-link",
+                                                    "eventName": "relationship-action-create",
+                                                    "text": "{[AddNewBtn]}",
+                                                    "intent": "write"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "gridConfig": {
+                                    "mode": "Read",
+                                    "statusEnabled": true,
+                                    "advanceSelectionEnabled": true,
+                                    "itemConfig": {
+                                        "image": "productImageUrl",
+                                        "isMultiSelect": true,
+                                        "linkTemplate": "entity-manage?id={id}&type={type}",
+                                        "id": "id",
+                                        "sort": {
+                                            "default": [
+                                                {
+                                                    "field": "order",
+                                                    "sortType": "asc"
+                                                }
+                                            ]
+                                        },
+                                        "title": "name",
+                                        "fields": {
+                                            "thumbnail": {
+                                                "displayType": "image",
+                                                "visible": true,
+                                                "displaySequence": 10,
+                                                "name": "thumbnailid",
+                                                "header": "Thumbnail",
+                                                "readOnly": true
+                                            },
+                                            "thgbrandtitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 130,
+                                                "name": "thgbrandtitan",
+                                                "header": "Brand",
+                                                "sortable": true,
+                                                "isRelatedEntityAttribute": true
+                                            },
+                                            "thgmpntitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 140,
+                                                "name": "thgmpntitan",
+                                                "header": "MPN",
+                                                "sortable": true,
+                                                "isRelatedEntityAttribute": true
+                                            },
+                                            "name": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 150,
+                                                "name": "name",
+                                                "sortable": false,
+                                                "isRelatedEntityAttribute": false
+                                            },
+                                            "thgpartitemcodetitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 100,
+                                                "name": "thgpartitemcodetitan",
+                                                "header": "Part Item Code",
+                                                "sortable": true,
+                                                "isRelatedEntityAttribute": true
+                                            },
+                                            "thgshortname": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 120,
+                                                "name": "thgshortname",
+                                                "header": "Short Name",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                "sortable": true,
+                                                "isRelatedEntityAttribute": true
+                                            },
+                                            "id": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "isMetaDataColumn": true,
+                                                "name": "id",
+                                                "sortable": false,
+                                                "isRelatedEntityAttribute": false
+                                            },
+                                            "thgskutitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 110,
+                                                "name": "thgskutitan",
+                                                "header": "SKU Titan",
+                                                "sortable": true,
+                                                "isRelatedEntityAttribute": true
+                                            }
+                                        }
+                                    },
+                                    "actionEnabled": false,
+                                    "schemaType": "simple",
+                                    "applyContextCoalesce": true,
+                                    "viewConfig": {
+                                        "tile": {
+                                            "settings": {
+                                                "subTitlePattern": "{entity.attributes.order} | {entity.typeExternalName} | {entity.id} | {entity.name}",
+                                                "actions": {
+                                                    "delete": {
+                                                        "visible": true,
+                                                        "name": "delete",
+                                                        "icon": "pebble-icon:delete",
+                                                        "tooltip": "{[DltTxt]}",
+                                                        "eventName": "delete-item"
+                                                    }
+                                                }
+                                            },
+                                            "visible": true,
+                                            "fieldChanges": {}
+                                        },
+                                        "tabular": {
+                                            "visible": true,
+                                            "fieldChanges": {}
+                                        },
+                                        "list": {
+                                            "settings": {
+                                                "actions": {
+                                                    "delete": {
+                                                        "visible": true,
+                                                        "name": "delete",
+                                                        "icon": "pebble-icon:delete",
+                                                        "tooltip": "{[DltTxt]}",
+                                                        "eventName": "delete-item"
+                                                    }
+                                                }
+                                            },
+                                            "visible": true,
+                                            "fieldsChanges": {}
+                                        }
+                                    },
+                                    "viewMode": "Tabular",
+                                    "pageRangeVisible": true
+                                },
+                                "businessActions": {
+                                    "basic": {
+                                        "visible": true,
+                                        "actions": {
+                                            "add": {
+                                                "visible": true,
+                                                "name": "add",
+                                                "icon": "pebble-icon:link",
+                                                "eventName": "relationship-action-add",
+                                                "text": "{[AddTxt]}",
+                                                "intent": "write"
+                                            },
+                                            "create-and-add": {
+                                                "visible": true,
+                                                "name": "create-add",
+                                                "icon": "pebble-icon:add-link",
+                                                "eventName": "relationship-action-create",
+                                                "text": "{[AddNewBtn]}",
+                                                "intent": "write"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

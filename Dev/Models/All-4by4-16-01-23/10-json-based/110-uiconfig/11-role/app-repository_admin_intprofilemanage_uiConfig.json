@@ -1,0 +1,64 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_admin_intprofilemanage_uiConfig",
+            "name": "app-repository_admin_intprofilemanage",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.491+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "intprofilemanage",
+                            "component": "app-repository",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "app-profile-search": {
+                                    "dataRoute": "app-profile-search",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "/plugin-src/intprofilemanage/elements/app-profile-search/app-profile-search.js",
+                                        "name": "app-profile-search"
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "",
+                                    "icon": "pebble-icon:integration-profile",
+                                    "title": "{[IntProsTxt]}",
+                                    "enabled": true
+                                },
+                                "app-profile-manage": {
+                                    "dataRoute": "app-profile-manage",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "/plugin-src/intprofilemanage/elements/app-profile-manage/app-profile-manage.js",
+                                        "name": "app-profile-manage"
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "",
+                                    "icon": "pebble-icon:integration-profile",
+                                    "title": "{[IntProManTxt]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_systemadmin_uiconfigmanage_uiConfig",
+            "name": "app-repository_systemadmin_uiconfigmanage",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T04:59:36.792+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "uiconfigmanage",
+                            "component": "app-repository",
+                            "role": "systemadmin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "app-ui-config-manage": {
+                                    "dataRoute": "app-ui-config-manage",
+                                    "component": {
+                                        "path": "/plugin-src/uiconfigmanage/elements/app-userinterface-config-manage/app-userinterface-config-manage.js",
+                                        "name": "app-userinterface-config-manage"
+                                    },
+                                    "nonMinimizable": false,
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:uiconfig-manage",
+                                    "title": "{[UICnfMngTit]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

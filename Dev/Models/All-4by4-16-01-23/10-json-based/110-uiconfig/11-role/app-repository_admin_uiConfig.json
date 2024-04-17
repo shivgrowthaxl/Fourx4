@@ -1,0 +1,66 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_admin_uiConfig",
+            "name": "app-repository_admin",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-12T17:41:06.681+1100",
+                "modifiedDate": "2023-01-12T17:41:06.681+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "app-repository",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "upload-excel": {
+                                    "dataRoute": "upload-excel",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-business-function/app-business-function.js",
+                                        "name": "app-business-function",
+                                        "properties": {
+                                            "name": "rock-wizard-entity-upload",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:entities",
+                                    "title": "{[UplEntTxt]}",
+                                    "enabled": true
+                                },
+                                "syndication-dashboard": {
+                                    "dataRoute": "syndication-dashboard",
+                                    "component": {
+                                        "path": "/plugin-src/app-syndication/elements/syndication-dashboard/plugin-syndication-dashboard.js",
+                                        "name": "plugin-syndication-dashboard",
+                                        "properties": {
+                                            "view-mode": true,
+                                            "name": "dashboard"
+                                        }
+                                    },
+                                    "icon": "pebble-icon:allfourx4ds-syndicationDashboard-icon",
+                                    "title": "Syndication Dashboard",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

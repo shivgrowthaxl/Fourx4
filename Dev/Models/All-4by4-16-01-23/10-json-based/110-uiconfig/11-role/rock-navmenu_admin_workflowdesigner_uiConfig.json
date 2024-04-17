@@ -1,0 +1,52 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_admin_workflowdesigner_uiConfig",
+            "name": "rock-navmenu_admin_workflowdesigner",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:00:44.416+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "workflowdesigner",
+                            "component": "rock-navmenu",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "configurations": {
+                                    "visible": true,
+                                    "subNavMenu": {
+                                        "governance": {
+                                            "visible": true,
+                                            "actions": {
+                                                "app-workflow-designer": {
+                                                    "dataRoute": "app-workflow-designer",
+                                                    "visible": true,
+                                                    "displaySequence": 80,
+                                                    "name": "app-workflow-designer",
+                                                    "icon": "pebble-icon:workflow-designer",
+                                                    "title": "{[WfDesTit]}"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

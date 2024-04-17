@@ -1,0 +1,78 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-wizard-re-publish_export_to_omnivore_uiConfig",
+            "name": "rock-wizard-re-publish_export_to_omnivore",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-wizard-re-publish"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "re-publish-omnivore": {
+                                    "name": "re-publish-omnivore",
+                                    "label": "Export To Omnivore",
+                                    "steps": {
+                                        "step-1-re-publish-entity": {
+                                            "component": {
+                                                "path": "/../../src/elements/rock-re-publish/rock-re-publish.html",
+                                                "name": "rock-re-publish",
+                                                "properties": {
+                                                    "profiles": [
+                                                        {
+                                                            "copContext": {
+                                                                "app": "RSConnect",
+                                                                "role": "admin",
+                                                                "subtype": "System",
+                                                                "service": "ENTITY_EXPORT",
+                                                                "channel": "AZURE_BLOB_CONTAINER",
+                                                                "format": "JSON",
+                                                                "source": "internal",
+                                                                "user": "system",
+                                                                "order": "30"
+                                                            },
+                                                            "types-criterion": [
+                                                                "item"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "backEvent": "onCancel",
+                                            "name": "step-1-re-publish-entity",
+                                            "nextEvent": "onComplete",
+                                            "label": "Export To Omnivore",
+                                            "sharedProperties": {
+                                                "business-function-data": "businessFunctionData"
+                                            }
+                                        },
+                                        "step-2-re-publish-entity-finish": {
+                                            "component": {
+                                                "path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+                                                "name": "rock-business-function-finish",
+                                                "properties": {
+                                                    "business-function-data": {}
+                                                }
+                                            },
+                                            "name": "step-2-re-publish-entity-finish",
+                                            "nextEvent": "onNext",
+                                            "label": "Finish Export to Omnivore"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

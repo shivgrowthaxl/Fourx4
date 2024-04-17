@@ -1,0 +1,107 @@
+{
+    "metaInfo": {
+        "dataIndex": "scheduleObject",
+        "collectionName": "scheduleObjects",
+        "responseObjectName": "response"
+    },
+    "scheduleObjects": [
+        {
+            "id": "scheduletopublishentitiesgenericobjecttoblobstoreitemomnivore",
+            "name": "scheduletopublishentitiesgenericobjecttoblobstoreitemomnivore",
+            "type": "scheduleobject",
+            "properties": {
+                "enabled": true
+            },
+            "data": {
+                "attributes": {
+                    "scheduleType": {
+                        "values": [
+                            {
+                                "value": "fixedRate",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    },
+                    "scheduleTaskName": {
+                        "values": [
+                            {
+                                "value": "scheduletopublishentitiesgenericobjecttoblobstoreitemomnivore",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    },
+                    "scheduleTaskUrl": {
+                        "values": [
+                            {
+                                "value": "http://imp-exp-rest:9095/{{TENANT}}/api/rsConnectService/publish",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    }
+                },
+                "jsonData": {
+                    "scheduleTaskPayload": {
+                        "params": {
+                            "query": {
+                                "filters": {
+                                    "attributesCriterion": [
+                                        {
+                                            "taskType": {
+                                                "exact": "RSCONNECT_PUBLISH_AGGREATED_entities_export_to_genericobject_blobstore_item_omnivore"
+                                            }
+                                        },
+                                        {
+                                            "status": {
+                                                "exact": "QUEUED"
+                                            }
+                                        }
+                                    ],
+                                    "typesCriterion": [
+                                        "scheduledrequestobject"
+                                    ]
+                                }
+                            },
+                            "sort": {
+                                "attributes": [
+                                    {
+                                        "dataObjectId": "_DESC",
+                                        "sortType": "_STRING"
+                                    }
+                                ]
+                            },
+                            "fields": {
+                                "relationships": [
+                                    "_ALL"
+                                ],
+                                "attributes": [
+                                    "_ALL"
+                                ]
+                            },
+                            "rsconnect": {
+                                "profiles": [
+                                    "collect_from_genericobjects_blobstore_item_omnivore"
+                                ]
+                            }
+                        }
+                    },
+                    "scheduleConfiguration": {
+                        "authContext": {
+                            "x-rdp-userRoles": "admin",
+                            "x-rdp-clientId": "rdpclient",
+                            "x-rdp-userid": "system_user",
+                            "x-rdp-useremail": "system",
+                            "x-rdp-ownershipdata": "",
+                            "x-rdp-username": "system",
+                            "x-rdp-authtoken": "vA/BnGa6ue5oCdgxaogJRvxDy7dAudrs3qstHYJNBUE=",
+                            "x-rdp-tenantId": "{{TENANT}}"
+                        },
+                        "intervalInMins": 5
+                    }
+                }
+            }
+        }
+    ]
+}
