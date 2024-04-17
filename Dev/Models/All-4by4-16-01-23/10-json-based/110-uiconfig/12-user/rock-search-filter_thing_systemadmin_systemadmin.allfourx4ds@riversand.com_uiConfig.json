@@ -1,0 +1,46 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-search-filter_thing_systemadmin_systemadmin.allfourx4ds@riversand.com_uiConfig",
+            "name": "rock-search-filter_thing_systemadmin_systemadmin.allfourx4ds@riversand.com",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "systemadmin.allfourx4ds@riversand.com",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2022-12-22T08:24:49.778+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-search-filter",
+                            "domain": "thing",
+                            "role": "systemadmin",
+                            "user": "systemadmin.allfourx4ds@riversand.com_user"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "pinnedFilterAttributes": {
+                                    "thgstockkeytitan": {
+                                        "visible": false,
+                                        "displaySequence": 1,
+                                        "name": "thgstockkeytitan",
+                                        "isUserFilter": true
+                                    }
+                                },
+                                "maxPinnableFilters": 10
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

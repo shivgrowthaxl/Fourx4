@@ -1,0 +1,59 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-result-actions_referenceData_uiConfig",
+            "name": "rock-entity-search-result-actions_referenceData",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "buildVersion": "1.84.0.2072",
+                "createdService": "configurationManageService",
+                "createdBy": "system_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "system_user",
+                "createdDate": "2023-01-08T01:16:11.014+1100",
+                "modifiedDate": "2023-01-08T01:16:11.014+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-search-result-actions",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "referenceData",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "toolbarConfig": {
+                                    "buttonItems": {
+                                        "basic": {
+                                            "buttons": {
+                                                "bulkedit": {
+                                                    "visible": false
+                                                },
+                                                "inlinebulkedit": {
+                                                    "visible": false
+                                                },
+                                                "bulkdelete": {
+                                                    "visible": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

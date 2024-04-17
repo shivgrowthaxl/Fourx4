@@ -1,0 +1,37 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rs-bigcommerce_syndicationmappingconfig",
+            "name": "rs-bigcommerce",
+            "type": "syndicationmappingconfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-09T21:43:36.025+1100",
+                "modifiedDate": "2023-01-09T21:43:36.025+1100"
+            },
+            "data": {
+                "jsonData": {
+                    "relationshipTypeMapping": {
+                        "imageof": "hasimages",
+                        "childof": "isrelateditem"
+                    },
+                    "entityTypeMapping": {
+                        "parentEntity": "item",
+                        "childEntity": "childitem",
+                        "imageAsset": "image",
+                        "category": "classification",
+                        "videoAsset": "video"
+                    }
+                }
+            }
+        }
+    ]
+}

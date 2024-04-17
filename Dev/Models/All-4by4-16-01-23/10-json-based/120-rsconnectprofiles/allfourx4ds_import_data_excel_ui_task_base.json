@@ -1,0 +1,126 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "allfourx4ds_import_data_excel_ui_task_base",
+            "name": "Allfourx4ds Base import Excel data",
+            "type": "integrationprofile",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-07-17T23:57:42.052-0500",
+                "modifiedDate": "2022-07-17T23:57:42.052-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "RSConnect",
+                            "channel": "UI",
+                            "format": "Excel",
+                            "order": "10",
+                            "role": "admin",
+                            "service": "ENTITY_IMPORT",
+                            "source": "internal",
+                            "subtype": "User",
+                            "user": "system"
+                        },
+                        "jsonData": {
+                            "statusEventEnabled": false,
+                            "transform": {
+                                "settings": {
+                                    "defaultEntityType": "rsunknown",
+                                    "allowNullValues": "false",
+                                    "loadDefaultOverrides": true,
+                                    "clearMissingAttributes": "false",
+                                    "strategies": [
+                                        {
+                                            "caseFormat": "NONE",
+                                            "trimTrailingNumbers": "false",
+                                            "isDefault": "false",
+                                            "removeSpecialCharacters": "false",
+                                            "removeWhitespace": "false",
+                                            "useExternalName": "true",
+                                            "trimLeadingNumbers": "false"
+                                        }
+                                    ],
+                                    "entityType": "@field(Type)",
+                                    "excludeMappingHeaders": [
+                                        "Action",
+                                        "Type",
+                                        "ID",
+                                        "Name"
+                                    ],
+                                    "enableDynamicMapping": "true",
+                                    "useDefaultContext": false,
+                                    "collectionSeparator": "||"
+                                }
+                            },
+                            "integrationType": "User",
+                            "profileType": "base",
+                            "isEnabled": "true",
+                            "publish": {
+                                "filter": {
+                                    "include": {},
+                                    "exclude": {}
+                                },
+                                "isBinaryStreamPersistent": "false",
+                                "channel": [
+                                    {
+                                        "settings": {},
+                                        "type": "rdpConnector"
+                                    }
+                                ],
+                                "format": {
+                                    "settings": {
+                                        "additionalSettings": {
+                                            "supportsCollection": "true",
+                                            "encoding": "utf8"
+                                        }
+                                    },
+                                    "type": "RSJSON",
+                                    "batchSize": 1,
+                                    "version": "1.1"
+                                }
+                            },
+                            "isMergeableWithCustom": true,
+                            "collect": {
+                                "filter": {
+                                    "include": {},
+                                    "exclude": {}
+                                },
+                                "isBinaryStreamPersistent": "true",
+                                "channel": [
+                                    {
+                                        "settings": {
+                                            "sourceFolder": "",
+                                            "pattern": "*"
+                                        },
+                                        "type": "folderConnector"
+                                    }
+                                ],
+                                "format": {
+                                    "settings": {
+                                        "httpSettings": {
+                                            "bulkLoadAttributes": [
+                                                "Download Asset URL"
+                                            ]
+                                        }
+                                    },
+                                    "type": "EXCEL",
+                                    "version": "1.1"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

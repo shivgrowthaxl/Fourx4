@@ -1,0 +1,559 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_uiConfig",
+            "name": "app-repository",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2023-01-11T03:47:09.499+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "app-repository",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "manage-workflow-mappings": {
+                                    "dataRoute": "manage-workflow-mappings",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-manage-workflow-mappings/app-manage-workflow-mappings.js",
+                                        "name": "app-manage-workflow-mappings"
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-workflow",
+                                    "title": "{[WfMapsTxt]}",
+                                    "enabled": true
+                                },
+                                "application-log-viewer": {
+                                    "dataRoute": "application-log-viewer",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "applicationlog"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:log-viewer",
+                                    "title": "{[AplLogsTxt]}",
+                                    "enabled": true
+                                },
+                                "govmodel-dashboard": {
+                                    "dataRoute": "govmodel-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-governance",
+                                    "title": "{[GDARTit]}",
+                                    "enabled": true
+                                },
+                                "search-referencedata": {
+                                    "enabled": true
+                                },
+                                "configurations": {
+                                    "enabled": true
+                                },
+                                "basemodel-thing-dashboard": {
+                                    "dataRoute": "basemodel-thing-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-data",
+                                    "title": "{[BasThiDasAppTit]}",
+                                    "enabled": true
+                                },
+                                "authmodel-dashboard": {
+                                    "dataRoute": "authmodel-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-authorization",
+                                    "title": "{[ADARTit]}",
+                                    "enabled": true
+                                },
+                                "search-location": {
+                                    "enabled": false
+                                },
+                                "search-uomdata": {
+                                    "dataRoute": "search-uomdata",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "UOMData"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "{[UomSRAppTit]}",
+                                    "icon": "pebble-icon:tags",
+                                    "title": "{[SeaTxt]}",
+                                    "enabled": true
+                                },
+                                "search-digitalasset": {
+                                    "enabled": true
+                                },
+                                "search-generic-object": {
+                                    "dataRoute": "search-generic-object",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-generic-object-discovery/app-generic-object-discovery.js",
+                                        "name": "app-generic-object-discovery",
+                                        "properties": {
+                                            "app-name": "app-generic-object-discovery"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "{[GenObjTxt]}",
+                                    "icon": "pebble-icon:generic-search",
+                                    "title": "{[SeaTxt]}",
+                                    "enabled": true
+                                },
+                                "basemodel-location-dashboard": {
+                                    "dataRoute": "basemodel-location-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "title": "{[BasLocDasAppTit]}",
+                                    "enabled": true
+                                },
+                                "search": {
+                                    "enabled": false
+                                },
+                                "upload-excel": {
+                                    "dataRoute": "upload-excel",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-business-function/app-business-function.js",
+                                        "name": "app-business-function",
+                                        "properties": {
+                                            "name": "rock-wizard-entity-upload",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:entities",
+                                    "title": "{[UplEntTxt]}",
+                                    "enabled": true
+                                },
+                                "search-party": {
+                                    "enabled": false
+                                },
+                                "systemlog-viewer": {
+                                    "dataRoute": "systemlog-viewer",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-external-dashboard/app-external-dashboard.js",
+                                        "name": "app-external-dashboard",
+                                        "properties": {}
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:log-viewer",
+                                    "title": "{[SVRTit]}",
+                                    "enabled": false
+                                },
+                                "basemodel-digitalasset-dashboard": {
+                                    "dataRoute": "basemodel-digitalasset-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-data",
+                                    "title": "{[BDDARTit]}",
+                                    "enabled": true
+                                },
+                                "basemodel-referencedata-dashboard": {
+                                    "dataRoute": "basemodel-referencedata-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-reference-model",
+                                    "title": "{[BasRefDasAppTit]}",
+                                    "enabled": true
+                                },
+                                "basemodel-party-dashboard": {
+                                    "dataRoute": "basemodel-party-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-data",
+                                    "title": "{[BasParDasAppTit]}",
+                                    "enabled": true
+                                },
+                                "business-rule-create": {
+                                    "dataRoute": "business-rule-create",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-business-function/app-business-function.js",
+                                        "name": "app-business-function",
+                                        "properties": {
+                                            "name": "rock-wizard-business-rule-create",
+                                            "action-sub-title": "{[BizRulTxt]}"
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:entities",
+                                    "title": "Create Business Rule",
+                                    "enabled": true
+                                },
+                                "visualization-manage-dashboard": {
+                                    "dataRoute": "visualization-manage-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit",
+                                            "app-name": "app-visualization-manage-dashboard"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-pie-chart-manage",
+                                    "title": "{[MngRepsTxt]}",
+                                    "enabled": true
+                                },
+                                "system-administration": {
+                                    "enabled": true
+                                },
+                                "visualizations": {
+                                    "enabled": false
+                                },
+                                "visualization-dashboard": {
+                                    "dataRoute": "visualization-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "visualization",
+                                            "app-name": "app-visualization-dashboard"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-pie-chart",
+                                    "title": "{[RepsTxt]}",
+                                    "enabled": true
+                                },
+                                "uiconfig-dashboard": {
+                                    "dataRoute": "uiconfig-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "name": "uiconfig-dashboard",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:profile-setting",
+                                    "title": "{[UiCfgsTxt]}",
+                                    "enabled": true
+                                },
+                                "context-model-dashboard": {
+                                    "dataRoute": "context-model-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-user",
+                                    "title": "{[ConModSetTxt]}",
+                                    "enabled": true
+                                },
+                                "workflowmodel-dashboard": {
+                                    "dataRoute": "workflowmodel-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-workflow",
+                                    "title": "{[ManWfTxt]}",
+                                    "enabled": true
+                                },
+                                "search-graph-process-model": {
+                                    "dataRoute": "search-graph-process-model",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-graph-process-model-search/app-graph-process-model-search.js",
+                                        "name": "app-graph-process-model-search"
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "",
+                                    "icon": "pebble-icon:integration-profile",
+                                    "title": "{[GpmTxt]}",
+                                    "enabled": true
+                                },
+                                "search-addon-app": {
+                                    "dataRoute": "search-addon-app",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "sysAddOnApp"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "",
+                                    "icon": "pebble-icon:layers-filled",
+                                    "title": "{[AppManTxt]}",
+                                    "enabled": true
+                                },
+                                "system-monitoring-dashboard": {
+                                    "dataRoute": "system-monitoring-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "sysMonitoring"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-pie-chart",
+                                    "title": "{[SysMntTxt]}",
+                                    "enabled": true
+                                },
+                                "taxonomymodel-dashboard": {
+                                    "dataRoute": "taxonomymodel-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-taxonomy",
+                                    "title": "{[TCARTit]}",
+                                    "enabled": true
+                                },
+                                "basemodel-uomdata-dashboard": {
+                                    "dataRoute": "basemodel-uomdata-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-reference",
+                                    "title": "{[BasUomDasAppTit]}",
+                                    "enabled": true
+                                },
+                                "authmodel-setup": {
+                                    "dataRoute": "authmodel-setup",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../rock-authorization-manage/rock-auth-manage.js",
+                                        "name": "rock-auth-manage",
+                                        "properties": {}
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "title": "{[AuthSetTxt]}",
+                                    "enabled": true
+                                },
+                                "plugin-dashboard": {
+                                    "dataRoute": "plugin-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "name": "plugin-dashboard",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:plugin",
+                                    "title": "{[PlgExtTxt]}",
+                                    "enabled": true
+                                },
+                                "applicationmonitoring-dashboard": {
+                                    "dataRoute": "applicationmonitoring-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "name": "applicationmonitoring-dashboard",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:health",
+                                    "title": "{[AplMntTxt]}",
+                                    "enabled": true
+                                },
+                                "instancedatamodel-dashboard": {
+                                    "dataRoute": "instancedatamodel-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "mode": "edit"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-data",
+                                    "title": "{[IDARTit]}",
+                                    "enabled": true
+                                },
+                                "open-apps": {
+                                    "enabled": true
+                                },
+                                "visualization-designer": {
+                                    "refreshable": true,
+                                    "dataRoute": "visualization-designer",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-visualization/app-visualization.js",
+                                        "name": "app-visualization",
+                                        "properties": {
+                                            "mode": "designer"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:dashboard-pie-chart-design",
+                                    "title": "{[DgnTxt]}",
+                                    "enabled": true
+                                },
+                                "policy-dashboard": {
+                                    "dataRoute": "policy-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "name": "policy-dashboard",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:dashboard-speedometer-filled",
+                                    "title": "{[PolDasTxt]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

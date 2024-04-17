@@ -1,0 +1,120 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-rock-integration-state-search-result-base_uiConfig",
+            "name": "plugin_plugin-rock-integration-state-search-result",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-08T05:50:00.495+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "component": "plugin-rock-integration-state-search-result",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "gridConfig": {
+                                    "advanceSelectionEnabled": false,
+                                    "mode": "Read",
+                                    "itemConfig": {
+                                        "settings": {
+                                            "isMultiSelect": false,
+                                            "disableSelectAll": true
+                                        },
+                                        "isMultiSelect": false,
+                                        "linkTemplate": "entity-manage?id={id}&type={type}",
+                                        "id": "id",
+                                        "title": "name",
+                                        "fields": {
+                                            "messageType": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "dataType": "string",
+                                                "displaySequence": 40,
+                                                "name": "messageType",
+                                                "header": "{[MsgTypTxt]}",
+                                                "sortable": true
+                                            },
+                                            "channel": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "dataType": "string",
+                                                "displaySequence": 41,
+                                                "name": "channel",
+                                                "header": "{[ChlTxt]}",
+                                                "sortable": true
+                                            },
+                                            "errorCount": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "dataType": "string",
+                                                "displaySequence": 43,
+                                                "name": "errorCount",
+                                                "header": "{[ErrCtTxt]}",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                "sortable": true
+                                            },
+                                            "errors": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "dataType": "string",
+                                                "displaySequence": 44,
+                                                "name": "errors",
+                                                "header": "{[MsgTxt]}",
+                                                "sortable": true
+                                            },
+                                            "effectiveDate": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "dataType": "datetime",
+                                                "displaySequence": 45,
+                                                "name": "effectiveDate",
+                                                "header": "{[EffDatTxt]}",
+                                                "sortable": false
+                                            }
+                                        }
+                                    },
+                                    "actionEnabled": false,
+                                    "applyLocaleCoalesce": false,
+                                    "schemaType": "simple",
+                                    "readOnly": true,
+                                    "applyContextCoalesce": false,
+                                    "viewConfig": {
+                                        "tabular": {
+                                            "settings": {},
+                                            "fieldChanges": {}
+                                        }
+                                    },
+                                    "viewMode": "Tabular",
+                                    "title": "Syndication Dashboard"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

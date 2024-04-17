@@ -1,0 +1,118 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "allfourx4_export_data_json_blob_task",
+            "name": "allfourx4_export_data_json_blob_task",
+            "type": "integrationprofile",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-12-13T20:52:10.048+1100",
+                "modifiedDate": "2022-12-13T20:52:10.048+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "RSConnect",
+                            "channel": "AZURE_BLOB",
+                            "format": "JSON",
+                            "order": "10",
+                            "role": "admin",
+                            "service": "ENTITY_EXPORT",
+                            "source": "internal",
+                            "subtype": "system",
+                            "user": "system"
+                        },
+                        "jsonData": {
+                            "statusEventEnabled": false,
+                            "transform": {
+                                "settings": {
+                                    "formatTransformer": "true",
+                                    "nullRecordTransformer": "true"
+                                }
+                            },
+                            "integrationType": "System",
+                            "profileType": "extended",
+                            "isEnabled": "true",
+                            "publish": {
+                                "isBinaryStreamPersistent": "true",
+                                "channel": [
+                                    {
+                                        "settings": {
+                                            "folderPath": "",
+                                            "fileType": ".*"
+                                        },
+                                        "type": "azureBlobConnector"
+                                    }
+                                ],
+                                "format": {
+                                    "filter": {
+                                        "include": {},
+                                        "exclude": {}
+                                    },
+                                    "settings": {
+                                        "additionalSettings": {
+                                            "dateFormat": "dd-MM-yyyy",
+                                            "encoding": "utf8"
+                                        }
+                                    },
+                                    "batchSize": 1,
+                                    "type": "RSJSON",
+                                    "version": "1.1"
+                                }
+                            },
+                            "isMergeableWithCustom": true,
+                            "extendedBaseProfileName": "sys_export_data_json_blob_task_base",
+                            "collect": {
+                                "isBinaryStreamPersistent": "true",
+                                "channel": [
+                                    {
+                                        "settings": {
+                                            "type": "RSJSON",
+                                            "version": "1.1"
+                                        },
+                                        "type": "rdpConnector"
+                                    }
+                                ],
+                                "format": {
+                                    "filter": {
+                                        "include": {
+                                            "typesCriterion": {
+                                                "item": {
+                                                    "queryFields": {
+                                                        "relationships": [
+                                                            "_ALL"
+                                                        ],
+                                                        "attributes": [
+                                                            "_ALL"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "exclude": {}
+                                    },
+                                    "settings": {
+                                        "dateFormat": "dd-MM-yyyy",
+                                        "encoding": "utf8"
+                                    },
+                                    "type": "RSJSON",
+                                    "batchSize": 1,
+                                    "version": "1.1"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

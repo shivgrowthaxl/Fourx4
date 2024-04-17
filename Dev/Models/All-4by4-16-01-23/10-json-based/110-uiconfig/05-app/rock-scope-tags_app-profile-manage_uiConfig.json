@@ -1,0 +1,52 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-scope-tags_app-profile-manage_uiConfig",
+            "name": "rock-scope-tags_app-profile-manage",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.697+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-profile-manage",
+                            "component": "rock-scope-tags"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "my-scopes": {
+                                    "favourites": {
+                                        "visible": false
+                                    },
+                                    "edit": {
+                                        "visible": true
+                                    },
+                                    "enable": {
+                                        "visible": false
+                                    },
+                                    "disable": {
+                                        "visible": false
+                                    },
+                                    "delete": {
+                                        "visible": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

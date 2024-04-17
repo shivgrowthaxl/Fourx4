@@ -1,0 +1,272 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-result_item_uiConfig",
+            "name": "rock-entity-search-result_item",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "EntityType": "_DEFAULT",
+                            "Relationship": "_DEFAULT",
+                            "Role": "_DEFAULT",
+                            "app": "_DEFAULT",
+                            "component": "rock-entity-search-result",
+                            "domain": "thing",
+                            "entityType": "_DEFAULT",
+                            "relationship": "_DEFAULT",
+                            "role": "_DEFAULT",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "governDataConfig": {
+                                    "showGovernDataToggle": false,
+                                    "entityNameAttribute": ""
+                                },
+                                "governAttributesCriterion": {
+                                    "include": []
+                                },
+                                "gridConfig": {
+                                    "filterQueryVisible": true,
+                                    "pageSize": 200,
+                                    "readOnly": true,
+                                    "applyContextCoalesce": false,
+                                    "advanceSelectionOptions": [
+                                        {
+                                            "mode": "count",
+                                            "label": "{[SelTop20]}",
+                                            "itemCount": "20"
+                                        },
+                                        {
+                                            "mode": "count",
+                                            "label": "{[SelTop50]}",
+                                            "itemCount": "50"
+                                        },
+                                        {
+                                            "mode": "query",
+                                            "label": "{[SRASAllLbl]}"
+                                        }
+                                    ],
+                                    "maxRecordsSize": 200,
+                                    "viewConfig": {
+                                        "toolbarConfig": {
+                                            "buttonItems": {
+                                                "basic": {
+                                                    "buttons": {
+                                                        "save": {
+                                                            "visible": true,
+                                                            "displaySequence": 98,
+                                                            "name": "save",
+                                                            "icon": "pebble-icon:save",
+                                                            "tooltip": "{[SavTxt]}",
+                                                            "text": ""
+                                                        },
+                                                        "refresh": {
+                                                            "visible": true,
+                                                            "displaySequence": 100,
+                                                            "name": "refresh",
+                                                            "icon": "pebble-icon:refresh",
+                                                            "tooltip": "{[RfsTxt]}",
+                                                            "text": ""
+                                                        },
+                                                        "revert": {
+                                                            "visible": true,
+                                                            "displaySequence": 99,
+                                                            "name": "Revert",
+                                                            "icon": "pebble-icon:revert",
+                                                            "tooltip": "{[RevTit]}",
+                                                            "text": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "tile": {
+                                            "settings": {
+                                                "titlePattern": "{entity.attributes.thgskutitan}",
+                                                "subTitlePattern": "{entity.attributes.thgpartitemcodetitan} | {entity.thgstatustitan} | {entity.thgproductnametitan} ",
+                                                "actions": {
+                                                    "thumbnail": {
+                                                        "displayType": "image",
+                                                        "visible": true,
+                                                        "displaySequence": 10,
+                                                        "name": "thumbnailid",
+                                                        "header": "",
+                                                        "readOnly": true
+                                                    },
+                                                    "delete": {
+                                                        "visible": false,
+                                                        "name": "delete",
+                                                        "icon": "pebble-icon:delete",
+                                                        "eventName": "delete-item"
+                                                    },
+                                                    "thgskutitan": {
+                                                        "filterable": false,
+                                                        "visible": true,
+                                                        "isMetaDataColumn": false,
+                                                        "displaySequence": 50,
+                                                        "name": "thgskutitan",
+                                                        "header": "SKU Titan",
+                                                        "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                        "sortable": false
+                                                    }
+                                                }
+                                            },
+                                            "fieldChanges": {}
+                                        },
+                                        "tabular": {
+                                            "settings": {},
+                                            "fieldChanges": {}
+                                        },
+                                        "list": {
+                                            "settings": {
+                                                "actions": {
+                                                    "delete": {
+                                                        "visible": true,
+                                                        "name": "delete",
+                                                        "icon": "pebble-icon:delete",
+                                                        "eventName": "delete-item"
+                                                    }
+                                                }
+                                            },
+                                            "fieldsChanges": {}
+                                        }
+                                    },
+                                    "viewMode": "Tabular",
+                                    "title": "{[SeaResTxt]}",
+                                    "pageRangeVisible": true,
+                                    "mode": "Read",
+                                    "advanceSelectionEnabled": true,
+                                    "itemConfig": {
+                                        "image": "productImageUrl",
+                                        "isMultiSelect": true,
+                                        "linkTemplate": "entity-manage?id={id}&type={type}",
+                                        "id": "id",
+                                        "title": "name",
+                                        "fields": {
+                                            "viewassets": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "iconColumn": true,
+                                                "displaySequence": 20,
+                                                "name": "view assets",
+                                                "icon": "pebble-icon:preview-filled",
+                                                "header": "",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}&viewMode=assets",
+                                                "sortable": false,
+                                                "iconTooltip": "{[VATxt]}"
+                                            },
+                                            "thumbnail": {
+                                                "displayType": "image",
+                                                "visible": true,
+                                                "displaySequence": 10,
+                                                "name": "thumbnailid",
+                                                "header": "",
+                                                "readOnly": true
+                                            },
+                                            "thgproductnametitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 50,
+                                                "name": "thgproductnametitan",
+                                                "header": "Product Name",
+                                                "sortable": false
+                                            },
+                                            "typeExternalName": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 30,
+                                                "name": "typeExternalName",
+                                                "sortable": false
+                                            },
+                                            "entityTypeIcon": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": true,
+                                                "iconColumn": true,
+                                                "displaySequence": 5,
+                                                "name": "entityTypeIcon",
+                                                "sortable": false
+                                            },
+                                            "name": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 50,
+                                                "name": "name",
+                                                "sortable": false
+                                            },
+                                            "thgpartitemcodetitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 50,
+                                                "name": "thgpartitemcodetitan",
+                                                "header": "Part Item Code",
+                                                "sortable": false
+                                            },
+                                            "thgbundleskucomponent": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 60,
+                                                "name": "thgbundleskucomponent",
+                                                "header": "Bundle SKU Component",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                "sortable": false
+                                            },
+                                            "id": {
+                                                "filterable": false,
+                                                "visible": false,
+                                                "isMetaDataColumn": true,
+                                                "displaySequence": 40,
+                                                "name": "id",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                "sortable": false
+                                            },
+                                            "thgskutitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 50,
+                                                "name": "thgskutitan",
+                                                "header": "SKU Titan",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                "sortable": false
+                                            },
+                                            "thgstatustitan": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 70,
+                                                "name": "thgstatustitan",
+                                                "header": "Status",
+                                                "sortable": false
+                                            }
+                                        }
+                                    },
+                                    "maxAllowedRecordsToEdit": 20,
+                                    "applyLocaleCoalesce": false,
+                                    "schemaType": "attribute",
+                                    "applyInvalidValueStyle": true,
+                                    "disableSelectAll": false,
+                                    "recordSelectionAllowed": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

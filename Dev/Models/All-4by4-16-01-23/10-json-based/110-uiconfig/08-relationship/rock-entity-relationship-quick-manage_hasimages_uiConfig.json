@@ -1,0 +1,123 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-relationship-quick-manage_hasimages_uiConfig",
+            "name": "rock-entity-relationship-quick-manage_hasimages",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "buildVersion": "1.82.0.2036",
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-11-25T22:45:30.674+1100",
+                "modifiedDate": "2022-11-25T22:45:30.674+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-relationship-quick-manage",
+                            "relationship": "hasimages"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "toolbarConfig": {
+                                    "buttonItems": {
+                                        "basic": {
+                                            "buttons": {
+                                                "refresh": {
+                                                    "visible": true,
+                                                    "displaySequence": 10,
+                                                    "name": "refresh",
+                                                    "icon": "pebble-icon:refresh",
+                                                    "tooltip": "{[RfsTxt]}",
+                                                    "text": ""
+                                                },
+                                                "moreActions": {
+                                                    "visible": false,
+                                                    "buttons": [
+                                                        {
+                                                            "visible": true,
+                                                            "displaySequence": 10,
+                                                            "name": "add",
+                                                            "icon": "pebble-icon:plus-outline",
+                                                            "tooltip": "{[AddTxt]}",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "visible": true,
+                                                            "displaySequence": 20,
+                                                            "name": "delete",
+                                                            "icon": "pebble-icon:delete",
+                                                            "tooltip": "{[DelTxt]}",
+                                                            "text": ""
+                                                        },
+                                                        {
+                                                            "visible": true,
+                                                            "displaySequence": 30,
+                                                            "name": "cut",
+                                                            "icon": "pebble-icon:cut",
+                                                            "tooltip": "{[CutTxt]}",
+                                                            "text": ""
+                                                        }
+                                                    ],
+                                                    "displaySequence": 20,
+                                                    "name": "moreActions",
+                                                    "icon": "pebble-icon:more-horizontal",
+                                                    "text": ""
+                                                },
+                                                "close": {
+                                                    "visible": true,
+                                                    "name": "close",
+                                                    "icon": "pebble-icon:close-outline",
+                                                    "tooltip": "{[ClsTxt]}",
+                                                    "text": ""
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "tabConfig": {
+                                    "tabItems": {
+                                        "relationshipAttributes": {
+                                            "component": {
+                                                "path": "../rock-relationship-attribute-manage/rock-relationship-attribute-manage.js",
+                                                "name": "rock-relationship-attribute-manage",
+                                                "properties": {
+                                                    "apply-context-coalesce": true,
+                                                    "functional-mode": "quickManage",
+                                                    "config-context": {
+                                                        "relationshipAttributes": [
+                                                            "thgrelisprimary",
+                                                            "thgrelimagedisplaysequence"
+                                                        ]
+                                                    },
+                                                    "do-sync-validation": true
+                                                }
+                                            },
+                                            "visible": true,
+                                            "displaySequence": 10,
+                                            "name": "reltionshipAttributes",
+                                            "title": "{[RQMRATit]}",
+                                            "enableDropdownMenu": true,
+                                            "selected": true
+                                        }
+                                    },
+                                    "scrollable": true,
+                                    "fitContainer": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

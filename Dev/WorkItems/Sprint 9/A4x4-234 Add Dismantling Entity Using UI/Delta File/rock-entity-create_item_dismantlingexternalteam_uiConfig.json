@@ -1,0 +1,50 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-create_item_dismantlingexternalteam_uiConfig",
+            "name": "rock-entity-create_item_dismantlingexternalteam",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "_DEFAULT",
+                            "component": "rock-entity-create",
+                            "domain": "_DEFAULT",
+                            "entityType": "item",
+                            "relationship": "_DEFAULT",
+                            "role": "dismantlingexternalteam",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "properties": {
+                                    "matchConfig": {
+                                        "enable-match-step": true,
+                                        "allow-update": false,
+                                        "compare-title": "{[ECMCComTit]}",
+                                        "allow-create": true
+                                    },
+                                    "noOfColumns": 3,
+                                    "attributeNames": [
+                                        "thgstockkeytitan",
+                                        "thgskutitan",
+                                        "thgdismantlingproduct"
+                                    ],
+                                    "enableRelationshipsMatchMerge": false,
+                                    "doSyncValidation": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_systemadmin_workflowdesigner_uiConfig",
+            "name": "app-repository_systemadmin_workflowdesigner",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:00:44.396+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "workflowdesigner",
+                            "component": "app-repository",
+                            "role": "systemadmin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "app-workflow-designer": {
+                                    "dataRoute": "app-workflow-designer",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "/plugin-src/workflowdesigner/elements/app-workflow-designer/app-workflow-designer.js",
+                                        "name": "app-workflow-designer"
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "",
+                                    "icon": "pebble-icon:workflow-designer",
+                                    "title": "{[WfDesTit]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

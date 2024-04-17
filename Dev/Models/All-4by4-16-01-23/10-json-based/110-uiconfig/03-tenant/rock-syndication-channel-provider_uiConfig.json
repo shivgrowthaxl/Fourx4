@@ -1,0 +1,60 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-syndication-channel-provider_uiConfig",
+            "name": "rock-syndication-channel-provider",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "buildVersion": "1.80.0.2031",
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-10-06T04:21:32.888-0500",
+                "modifiedDate": "2022-10-06T04:21:32.888-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-syndication-channel-provider",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "bigcommerce-syndicate-cop-context": {
+                                    "app": "Connector",
+                                    "role": "businessadmin",
+                                    "subtype": "System",
+                                    "service": "ENTITY_EXPORT",
+                                    "channel": "BIGCOMMERCE_SYNDICATE_PRODUCT",
+                                    "format": "JSON",
+                                    "source": "internal",
+                                    "user": "system",
+                                    "order": "10"
+                                },
+                                "bigcommerce-withdraw-cop-context": {
+                                    "app": "Connector",
+                                    "role": "businessadmin",
+                                    "subtype": "System",
+                                    "service": "ENTITY_EXPORT",
+                                    "channel": "BIGCOMMERCE_WITHDRAW_VARIANT",
+                                    "format": "JSON",
+                                    "source": "internal",
+                                    "user": "system",
+                                    "order": "10"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

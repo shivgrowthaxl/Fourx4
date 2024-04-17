@@ -1,0 +1,73 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-relationship-quick-manage_governanceModel_uiConfig",
+            "name": "rock-entity-relationship-quick-manage_governanceModel",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "buildVersion": "1.84.0.2072",
+                "createdService": "configurationManageService",
+                "createdBy": "system_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "system_user",
+                "createdDate": "2023-01-08T01:16:10.877+1100",
+                "modifiedDate": "2023-01-08T01:16:10.877+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-relationship-quick-manage",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "governanceModel",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "tabConfig": {
+                                    "tabItems": {
+                                        "relationshipAttributes": {
+                                            "component": {
+                                                "properties": {
+                                                    "apply-context-coalesce": false,
+                                                    "config-context": {
+                                                        "relationshipAttributes": [
+                                                            "ignoreChangeContext",
+                                                            "isDeleted",
+                                                            "enabled",
+                                                            "executionMode",
+                                                            "executionOrder",
+                                                            "triggerActions",
+                                                            "activityCriteria",
+                                                            "stepName",
+                                                            "defaultAction",
+                                                            "actions"
+                                                        ],
+                                                        "dataSubIndex": "entityModel",
+                                                        "loadGovernData": false,
+                                                        "dataIndex": "entityModel",
+                                                        "do-sync-validation": false
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "scrollable": true,
+                                    "fitContainer": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

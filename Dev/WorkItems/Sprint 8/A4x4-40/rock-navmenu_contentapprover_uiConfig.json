@@ -1,0 +1,60 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_contentapprover_uiConfig",
+            "name": "rock-navmenu_contentapprover",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "_DEFAULT",
+                            "component": "rock-navmenu",
+                            "domain": "_DEFAULT",
+                            "entityType": "_DEFAULT",
+                            "relationship": "_DEFAULT",
+                            "role": "contentapprover",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "syndicationDashboard": {
+                                    "dataRoute": "syndication-dashboard",
+                                    "visible": true,
+                                    "displaySequence": 160,
+                                    "name": "syndication-dashboard",
+                                    "icon": "pebble-icon:allfourx4ds-syndicationDashboard-icon",
+                                    "title": "Syndication Dashboard"
+                                },
+                                "configurations": {
+                                    "visible": true,
+                                    "subNavMenu": {
+                                        "governance": {
+                                            "visible": true,
+                                            "actions": {
+                                                "app-workflow-designer": {
+                                                    "dataRoute": "app-workflow-designer",
+                                                    "visible": true,
+                                                    "displaySequence": 80,
+                                                    "name": "app-workflow-designer",
+                                                    "icon": "pebble-icon:workflow-designer",
+                                                    "title": "{[WfDesTit]}"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+varthgshortname:=GetAttributeValue["_DEFAULT","_DEFAULT","thgshortname"];
+varthgshortnamedismantlingvehicle:=GetAttributeValue["_DEFAULT","_DEFAULT","thgshortnamedismantlingvehicle"];
+varthgapproveshortname:=GetAttributeValue["_DEFAULT","_DEFAULT","thgapproveshortname"];
+vardismantlingproduct:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproduct"];
+
+~IF dismantlingproduct is f~
+IIF[ValidateEmptyAttributes["_DEFAULT","_DEFAULT","thgmetatitle"] AND varthgapproveshortname="true" AND vardismantlingproduct<>true AND
+ IsNullOrEmpty[varthgshortname]=false,
+SetAttributeValue["_DEFAULT","_DEFAULT","thgmetatitle",varthgshortname]
+,false] AND
+
+IIF[ValidateEmptyAttributes["_DEFAULT","_DEFAULT","thglongname"] AND varthgapproveshortname="true" AND vardismantlingproduct<>true AND
+IsNullOrEmpty[varthgshortname]=false,
+SetAttributeValue["_DEFAULT","_DEFAULT","thglongname",varthgshortname],false] AND
+ 
+IIF[ValidateEmptyAttributes["_DEFAULT","_DEFAULT","thgmetadescription"] AND varthgapproveshortname="true" AND vardismantlingproduct<>true AND
+IsNullOrEmpty[varthgshortname]=false,
+SetAttributeValue["_DEFAULT","_DEFAULT","thgmetadescription",varthgshortname],false] AND
+~if dismantlingproduct is t~
+
+IIF[HaveAnyAttributesChanged["_DEFAULT","_DEFAULT","thgshortnamedismantlingvehicle","thgdismantlingproduct"]=true AND vardismantlingproduct=true AND IsNullOrEmpty[varthgshortnamedismantlingvehicle]=false,
+SetAttributeValue["_DEFAULT","_DEFAULT","thgmetatitle",varthgshortnamedismantlingvehicle]
+,false] AND
+
+IIF[HaveAnyAttributesChanged["_DEFAULT","_DEFAULT","thgshortnamedismantlingvehicle","thgdismantlingproduct"]=true AND vardismantlingproduct=true AND
+IsNullOrEmpty[varthgshortnamedismantlingvehicle]=false,
+SetAttributeValue["_DEFAULT","_DEFAULT","thglongname",varthgshortnamedismantlingvehicle],false] AND
+ 
+IIF[HaveAnyAttributesChanged["_DEFAULT","_DEFAULT","thgshortnamedismantlingvehicle","thgdismantlingproduct"]=true AND vardismantlingproduct=true AND
+IsNullOrEmpty[varthgshortnamedismantlingvehicle]=false,
+SetAttributeValue["_DEFAULT","_DEFAULT","thgmetadescription",varthgshortnamedismantlingvehicle],false]

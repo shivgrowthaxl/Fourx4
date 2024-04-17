@@ -1,0 +1,54 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-business-actions_app-entity-manage_thing_uiConfig",
+            "name": "rock-business-actions_app-entity-manage_thing",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-business-actions",
+                            "app": "app-entity-manage",
+                            "entityType": "item"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "actionGroups": {
+                                    "connectors": {
+                                        "actions": {
+                                            "plugin-syndication-business-action": {
+                                                "sharedData": {},
+                                                "visible": true,
+                                                "name": "plugin-syndication-business-action",
+                                                "icon": "pebble-icon:send",
+                                                "threshold": 100,
+                                                "text": "Syndicate",
+                                                "componentName": "plugin-wizard-syndication-business-action",
+                                                "title": "Syndicate",
+                                                "actionName": "plugin-custom-business-action"
+                                            }
+                                        }
+                                    },
+                                    "troubleshoot": {
+                                        "visible": true,
+                                        "actions": {
+                                            "search-requesttracking": {
+                                                "visible": true
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

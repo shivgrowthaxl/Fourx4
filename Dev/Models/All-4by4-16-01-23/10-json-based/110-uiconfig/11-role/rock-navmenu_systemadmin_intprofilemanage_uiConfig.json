@@ -1,0 +1,52 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_systemadmin_intprofilemanage_uiConfig",
+            "name": "rock-navmenu_systemadmin_intprofilemanage",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.563+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "intprofilemanage",
+                            "component": "rock-navmenu",
+                            "role": "systemadmin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "system-administration": {
+                                    "visible": true,
+                                    "subNavMenu": {
+                                        "administration": {
+                                            "visible": true,
+                                            "actions": {
+                                                "app-profile-search": {
+                                                    "dataRoute": "app-profile-search",
+                                                    "visible": true,
+                                                    "displaySequence": 80,
+                                                    "name": "app-profile-search",
+                                                    "icon": "pebble-icon:integration-profile",
+                                                    "title": "{[IntProsTxt]}"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

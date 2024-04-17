@@ -1,0 +1,52 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_admin_uiconfigmanage_uiConfig",
+            "name": "rock-navmenu_admin_uiconfigmanage",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T04:59:36.823+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "uiconfigmanage",
+                            "component": "rock-navmenu",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "system-administration": {
+                                    "visible": true,
+                                    "subNavMenu": {
+                                        "administration": {
+                                            "visible": true,
+                                            "actions": {
+                                                "uiConfigManage": {
+                                                    "dataRoute": "app-ui-config-manage",
+                                                    "visible": true,
+                                                    "displaySequence": 120,
+                                                    "icon": "pebble-icon:uiconfig-manage",
+                                                    "name": "app-ui-config-manage",
+                                                    "title": "{[UICnfMngTit]}"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

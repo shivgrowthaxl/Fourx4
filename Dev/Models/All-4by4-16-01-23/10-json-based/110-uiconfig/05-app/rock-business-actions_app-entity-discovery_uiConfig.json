@@ -1,0 +1,54 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-business-actions_app-entity-discovery_uiConfig",
+            "name": "rock-business-actions_app-entity-discovery",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-10-06T03:55:20.694-0500",
+                "modifiedDate": "2022-10-06T03:55:20.694-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-discovery",
+                            "component": "rock-business-actions",
+                            "domain": "thing"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "actionGroups": {
+                                    "connectors": {
+                                        "actions": {
+                                            "plugin-syndication-business-action": {
+                                                "sharedData": {},
+                                                "visible": true,
+                                                "name": "plugin-syndication-business-action",
+                                                "icon": "pebble-icon:send",
+                                                "threshold": 100,
+                                                "text": "Syndicate",
+                                                "componentName": "plugin-wizard-syndication-business-action",
+                                                "title": "Syndicate",
+                                                "actionName": "plugin-custom-business-action"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-result-myviews_thing_app-bulk-edit__DEFAULT_systemadmin_systemadmin.allfourx4ds@riversand.com_uiConfig",
+            "name": "rock-entity-search-result-myviews_thing_app-bulk-edit__DEFAULT_systemadmin_systemadmin.allfourx4ds@riversand.com",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "systemadmin.allfourx4ds@riversand.com",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2022-12-20T17:11:53.517+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-bulk-edit",
+                            "component": "rock-entity-search-result-myviews",
+                            "domain": "thing",
+                            "role": "systemadmin",
+                            "user": "systemadmin.allfourx4ds@riversand.com_user"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "selectedMyView": "stoockkkye",
+                                "myViews": {
+                                    "stoockkkye": {
+                                        "itemConfig": {
+                                            "isMultiSelect": true,
+                                            "linkTemplate": "entity-manage?id={id}&type={type}",
+                                            "fields": {
+                                                "thgmasterlongdescriptionebay": {
+                                                    "filterable": false,
+                                                    "displayType": "textarea",
+                                                    "visible": true,
+                                                    "isMetaDataColumn": false,
+                                                    "name": "thgmasterlongdescriptionebay",
+                                                    "header": "",
+                                                    "sortable": true
+                                                },
+                                                "thgldescriptionmpcse": {
+                                                    "filterable": false,
+                                                    "displayType": "richtexteditor",
+                                                    "visible": true,
+                                                    "isMetaDataColumn": false,
+                                                    "name": "thgldescriptionmpcse",
+                                                    "header": "",
+                                                    "sortable": true
+                                                }
+                                            }
+                                        },
+                                        "includeEnhancerGivenAttrs": false,
+                                        "name": "stoockkkye",
+                                        "icon": "pebble-icon:my-view",
+                                        "viewConfig": {
+                                            "tile": {
+                                                "settings": {
+                                                    "titlePattern": "{entity.attributes.thgmasterlongdescriptionebay}",
+                                                    "subTitlePattern": "{entity.attributes.thgmasterlongdescriptionebay} | {entity.attributes.thgldescriptionmpcse}"
+                                                }
+                                            }
+                                        },
+                                        "title": "stoockkkye",
+                                        "value": "stoockkkye",
+                                        "enabled": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

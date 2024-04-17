@@ -1,0 +1,35 @@
+~BR : brsetdefaultfordismantling : BR- Set Default Value Based On Dismantling True~ 
+vardismantlingvehicle:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproduct"];
+varthgbrandtitan:="Dismantling Vehicle";
+varthgldescriptionws:="Dismantling Vehicle";
+varthgmpntitan:="Dismantling Vehicle";
+varthgavailbilitytextbc:="Dismantling Vehicle";
+varthgbccondition:="Used";
+varthgweighttitan:="0.00";
+varthgwidthtitan:="0.00";
+varthgheighttitan:="0.00";
+varthglengthtitan:="0.00";
+varthgvisiblebutnotsalews:=true;
+varBrandrefid:="";
+varsequenceid:="";
+varthgdismantlingproductbc:="true";
+IIF[HaveAnyAttributesChanged["_DEFAULT","_DEFAULT","thgdismantlingproduct"] AND vardismantlingvehicle=true, SetAttributeValue["_DEFAULT","_DEFAULT","thgbrandtitan",varthgbrandtitan] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgldescriptionws",varthgldescriptionws] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgmpntitan",varthgmpntitan] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgavailbilitytextbc",varthgavailbilitytextbc] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgbccondition",varthgbccondition] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgweighttitan",varthgweighttitan] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgwidthtitan",varthgwidthtitan] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgheighttitan",varthgheighttitan] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thglengthtitan",varthglengthtitan] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgvisiblebutnotsalews",varthgvisiblebutnotsalews] AND
+SetVariable["varBrandrefid", GetEntityId["ANDACROSS","refbrandtitan","self:self",  Concat["value:_DEFAULT:_DEFAULT:exact:",varthgbrandtitan]]] AND
+SetVariable["varsequenceid", GetEntityAttributeValueById["_DEFAULT","_DEFAULT",varBrandrefid,"refbrandtitan","code"]] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgbrandidtitanbc",varsequenceid] AND
+SetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproductbc",varthgdismantlingproductbc] ,false] AND
+
+IIF[HaveAnyAttributesChanged["_DEFAULT","_DEFAULT","thgdismantlingproduct"] AND
+vardismantlingvehicle<>true,   
+DeleteAttribute["_DEFAULT","_DEFAULT","thgdismantlingvehicledomainlink"] AND
+DeleteAttribute["_DEFAULT","_DEFAULT","thgdismantlingvehicledomainenquirylink"] AND
+DeleteAttribute["_DEFAULT","_DEFAULT","thgdismantlingproductbc"],false]
