@@ -1,0 +1,45 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-syndication-channel-selector-base_uiConfig",
+            "name": "plugin_plugin-syndication-channel-selector",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-08T05:50:00.651+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "component": "plugin-syndication-channel-selector",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "channelids": [
+                                    "rs-productfeedhub-target",
+                                    "rs-productfeedhub-walmart",
+                                    "rs-scene7"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

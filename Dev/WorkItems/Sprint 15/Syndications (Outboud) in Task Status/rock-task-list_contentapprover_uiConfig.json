@@ -1,0 +1,40 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-task-list_contentapprover_uiConfig",
+            "name": "rock-task-list_contentapprover",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-task-list",
+                            "app": "_DEFAULT",
+                            "domain": "_DEFAULT",
+                            "entityType": "_DEFAULT",
+                            "relationship": "_DEFAULT",
+                            "role": "contentapprover"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "taskTypes": {
+                                    "syndicationEntityImport": {
+                                        "visible": true
+                                    },
+                                    "syndicationEntityExport": {
+                                        "visible": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

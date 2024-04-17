@@ -1,0 +1,59 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-syndication-manage-channels-base_uiConfig",
+            "name": "plugin_plugin-syndication-manage-channels",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-08T05:50:00.572+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "component": "plugin-syndication-manage-channels",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "tabConfig": [
+                                    {
+                                        "component": {},
+                                        "valueId": "addNew",
+                                        "name": "Add New",
+                                        "index": "0",
+                                        "title": "Add New",
+                                        "enableDropdownMenu": false,
+                                        "selected": true
+                                    },
+                                    {
+                                        "component": {},
+                                        "valueId": "manageViews",
+                                        "name": "Manage Views",
+                                        "index": "1",
+                                        "title": "Manage Views",
+                                        "enableDropdownMenu": false
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

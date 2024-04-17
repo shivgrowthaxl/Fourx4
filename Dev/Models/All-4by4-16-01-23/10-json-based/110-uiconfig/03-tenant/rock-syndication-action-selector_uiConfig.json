@@ -1,0 +1,58 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-syndication-action-selector_uiConfig",
+            "name": "rock-syndication-action-selector",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2022-10-27T04:14:23.553-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-syndication-action-selector",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "actionConfig": {
+                                    "syndicate": {
+                                        "allowedEntityTypes": [
+                                            "item"
+                                        ]
+                                    }
+                                },
+                                "channelConfig": {
+                                    "rs-bigcommerce": {
+                                        "syndicationChannelSettings": {
+                                            "name": "BigCommerce",
+                                            "id": "rs-bigcommerce"
+                                        },
+                                        "types-criterion": [
+                                            "item"
+                                        ],
+                                        "actions": {
+                                            "syndicate": {
+                                                "copContextId": "bigcommerce-syndicate-cop-context",
+                                                "action": "syndicate"
+                                            }
+                                        },
+                                        "channelId": "rs-bigcommerce"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

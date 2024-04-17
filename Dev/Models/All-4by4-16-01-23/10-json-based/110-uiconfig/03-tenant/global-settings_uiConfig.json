@@ -1,0 +1,43 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "global-settings_uiConfig",
+            "name": "global-settings",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-11T23:32:03.925+1100",
+                "modifiedDate": "2023-01-11T23:32:03.925+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "global-settings",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "dataDefaults": {
+                                    "entityTypes": {
+                                        "thing": [
+                                            "item"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

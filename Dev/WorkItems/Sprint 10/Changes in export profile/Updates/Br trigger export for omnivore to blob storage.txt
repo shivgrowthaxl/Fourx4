@@ -1,0 +1,25 @@
+~
+   BR : brtriggerexportforomnivoretoblobstorage
+   Description : Br trigger export for omnivore to blob storage
+   ~ 
+   varIsInMaintainceWF:=IsEntityInWorkflow["maintainencewf"];
+   varIsInItemCreateWF:=IsEntityInWorkflow["itemupdate"];
+   varWorkflowStatus:=GetAttributeValue["_DEFAULT","_DEFAULT","thgworkflowstatus"];
+   varapprovemain:=GetAttributeValue["_DEFAULT","_DEFAULT","thgapprovemwf"];
+   varapprovecreate:=GetAttributeValue["_DEFAULT","_DEFAULT","thgapprovewfbundlestatus"];
+   
+   ~Block_1: Dismantling Attributes :start~ 
+   varthgdismantlingproduct:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproduct"];
+   ~Block_1: Dismantling Attributes :end~
+
+
+   IIF[ValidateEmptyAttributes["_DEFAULT","_DEFAULT","thgimageurlbigcomm"]=false AND
+   IsNullOrEmpty[varWorkflowStatus]=false AND
+   varIsInMaintainceWF=false AND
+   varIsInItemCreateWF=false AND
+   varapprovemain=true AND
+   varapprovecreate=true AND
+   (varWorkflowStatus="Maintainance-Completed" OR varWorkflowStatus="Completed") AND
+   varthgdismantlingproduct<>true,
+   InitiateExport["entities_export_to_genericobject_blobstore_item_omnivore"] 
+   ,false]

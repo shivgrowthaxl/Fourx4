@@ -1,0 +1,66 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-entity-discovery_savedSearch_rsnuUruZwENhuY",
+            "name": "savedsearch_partialtrueandnoimages",
+            "type": "savedSearch",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-11-16T20:27:05.720+1100",
+                "modifiedDate": "2022-11-16T20:27:05.720+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-discovery",
+                            "component": "saved-search",
+                            "createdUser": "systemadmin.allfourx4ds@riversand.com_user",
+                            "domain": "thing",
+                            "entityType": "_DEFAULT",
+                            "role": "_DEFAULT",
+                            "tenant": "_DEFAULT",
+                            "user": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "governData": {},
+                                "displayQuery": "show \"Item\" with Partial = true having no Images relationship",
+                                "nestedAttributesWithSameRowFilter": [],
+                                "internalQuery": "!%&show&%! item !%&with&%! thgpartial = true !%&having&%! !%&hasimages!%& !%&show&%! image",
+                                "name": "Partial True and No Images",
+                                "id": "rsQ8k82HraabRi",
+                                "ownershipData": "",
+                                "dependencyData": {},
+                                "dimensions": {
+                                    "source": [
+                                        {
+                                            "id": "internal",
+                                            "title": "Internal",
+                                            "type": "source"
+                                        }
+                                    ],
+                                    "locale": [
+                                        {
+                                            "id": "en-US",
+                                            "title": "English - United States",
+                                            "type": "locale"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

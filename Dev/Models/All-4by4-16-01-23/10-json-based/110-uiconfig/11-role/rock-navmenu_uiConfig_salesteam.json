@@ -1,0 +1,333 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_uiConfig_salesteam",
+            "name": "rock-navmenu_uiConfig",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-13T15:09:37.596+1100",
+                "modifiedDate": "2023-01-13T15:09:37.596+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-navmenu",
+                            "role": "salesteam"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "search-referencedata": {
+                                    "visible": false
+                                },
+                                "configurations": {
+                                    "visible": false,
+                                    "subNavMenu": {
+                                        "dataModels": {
+                                            "visible": false,
+                                            "actions": {
+                                                "basemodel-location-dashboard": {
+                                                    "dataRoute": "basemodel-location-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 25,
+                                                    "name": "basemodel-location-dashboard",
+                                                    "icon": "pebble-icon:location-domain",
+                                                    "title": "{[BasLocDasAppTit]}"
+                                                },
+                                                "basemodel-uomdata-dashboard": {
+                                                    "dataRoute": "basemodel-uomdata-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 60,
+                                                    "name": "basemodel-uomdata-dashboard",
+                                                    "icon": "pebble-icon:library-data",
+                                                    "title": "{[BasUomDasAppTit]}"
+                                                },
+                                                "basemodel-digitalasset-dashboard": {
+                                                    "dataRoute": "basemodel-digitalasset-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 30,
+                                                    "name": "basemodel-digitalasset-dashboard",
+                                                    "icon": "pebble-icon:asset-data-model",
+                                                    "title": "{[BDDNMTit]}"
+                                                },
+                                                "basemodel-thing-dashboard": {
+                                                    "dataRoute": "basemodel-thing-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 10,
+                                                    "name": "basemodel-thing-dashboard",
+                                                    "icon": "pebble-icon:model-things-domain",
+                                                    "title": "{[BasThiDasAppTit]}"
+                                                },
+                                                "basemodel-referencedata-dashboard": {
+                                                    "dataRoute": "basemodel-referencedata-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 40,
+                                                    "name": "basemodel-referencedata-dashboard",
+                                                    "icon": "pebble-icon:model-reference-data-domain",
+                                                    "title": "{[BasRefDasAppTit]}"
+                                                },
+                                                "instancedatamodel-dashboard": {
+                                                    "dataRoute": "instancedatamodel-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 50,
+                                                    "name": "instancedatamodel-dashboard",
+                                                    "icon": "pebble-icon:dashboard-context",
+                                                    "title": "{[IDARTit]}"
+                                                },
+                                                "basemodel-party-dashboard": {
+                                                    "dataRoute": "basemodel-party-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 20,
+                                                    "name": "basemodel-party-dashboard",
+                                                    "icon": "pebble-icon:model-party-domain",
+                                                    "title": "{[BasParDasAppTit]}"
+                                                }
+                                            }
+                                        },
+                                        "systemReferenceData": {
+                                            "visible": true,
+                                            "actions": {
+                                                "taxonomymodel-dashboard": {
+                                                    "dataRoute": "taxonomymodel-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 10,
+                                                    "name": "taxonomymodel-dashboard",
+                                                    "icon": "pebble-icon:dashboard-taxonomy",
+                                                    "title": "{[TCARTit]}"
+                                                },
+                                                "search-uomdata": {
+                                                    "dataRoute": "search-uomdata",
+                                                    "visible": false,
+                                                    "displaySequence": 20,
+                                                    "name": "search-uomdata",
+                                                    "icon": "pebble-icon:library-search",
+                                                    "title": "{[UomSRAppTit]}"
+                                                }
+                                            }
+                                        },
+                                        "governance": {
+                                            "visible": false,
+                                            "actions": {
+                                                "manage-workflow-mappings": {
+                                                    "dataRoute": "manage-workflow-mappings",
+                                                    "visible": false,
+                                                    "displaySequence": 30,
+                                                    "name": "manage-workflow-mappings",
+                                                    "icon": "pebble-icon:dashboard-workflow",
+                                                    "title": "Manage workflow mappings"
+                                                },
+                                                "govmodel-dashboard": {
+                                                    "dataRoute": "govmodel-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 10,
+                                                    "name": "govmodel-dashboard",
+                                                    "icon": "pebble-icon:dashboard-governance",
+                                                    "title": "{[GDARTit]}"
+                                                },
+                                                "authmodel-dashboard": {
+                                                    "dataRoute": "authmodel-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 40,
+                                                    "name": "authmodel-dashboard",
+                                                    "icon": "pebble-icon:dashboard-authorization",
+                                                    "title": "{[ADARTit]}"
+                                                },
+                                                "workflowmodel-dashboard": {
+                                                    "dataRoute": "workflowmodel-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 20,
+                                                    "name": "workflowmodel-dashboard",
+                                                    "icon": "pebble-icon:dashboard-workflow",
+                                                    "title": "{[ManWfTxt]}"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "quick-actions": {
+                                    "visible": false,
+                                    "subNavMenu": {
+                                        "upload": {
+                                            "actions": {
+                                                "uploadAssets": {
+                                                    "dataRoute": "upload-assets",
+                                                    "visible": false,
+                                                    "displaySequence": 30,
+                                                    "name": "uploadAssets",
+                                                    "icon": "pebble-icon:asset-library",
+                                                    "text": "{[UplAssTxt]}",
+                                                    "contextData": {}
+                                                },
+                                                "uploadEntities": {
+                                                    "dataRoute": "upload-excel",
+                                                    "visible": false,
+                                                    "name": "uploadEntities",
+                                                    "icon": "pebble-icon:publish",
+                                                    "text": "{[UplEntTxt]}",
+                                                    "contextData": {}
+                                                },
+                                                "uploadCSV": {
+                                                    "dataRoute": "upload-csv",
+                                                    "visible": false,
+                                                    "name": "uploadCSV",
+                                                    "icon": "pebble-icon:publish",
+                                                    "text": "{[UplCSVTxt]}",
+                                                    "contextData": {}
+                                                }
+                                            }
+                                        },
+                                        "create": {
+                                            "actions": {
+                                                "createitem": {
+                                                    "dataRoute": "entity-create",
+                                                    "visible": false,
+                                                    "displaySequence": 10,
+                                                    "name": "createEntity",
+                                                    "icon": "pebble-icon:plus-outline",
+                                                    "text": "Create Item",
+                                                    "contextData": {
+                                                        "itemContext": {
+                                                            "type": "item"
+                                                        }
+                                                    }
+                                                },
+                                                "createBusinessRule": {
+                                                    "dataRoute": "business-rule-create",
+                                                    "visible": false,
+                                                    "name": "createBusinessRule",
+                                                    "icon": "pebble-icon:advanced-gear",
+                                                    "text": "{[BizRulTxt]}",
+                                                    "contextData": {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "open-apps": {
+                                    "visible": true
+                                },
+                                "search-digitalasset": {
+                                    "visible": true
+                                },
+                                "system-administration": {
+                                    "visible": false,
+                                    "subNavMenu": {
+                                        "administration": {
+                                            "visible": false,
+                                            "actions": {
+                                                "search-addon-app": {
+                                                    "dataRoute": "search-addon-app",
+                                                    "visible": false,
+                                                    "displaySequence": 70,
+                                                    "name": "search-addon-app",
+                                                    "icon": "pebble-icon:layers-filled",
+                                                    "title": "{[AppManTxt]}"
+                                                },
+                                                "search-generic-object": {
+                                                    "dataRoute": "search-generic-object",
+                                                    "visible": false,
+                                                    "displaySequence": 20,
+                                                    "name": "search-generic-object",
+                                                    "icon": "pebble-icon:generic-search",
+                                                    "title": "{[SeaGenObjTxt]}"
+                                                },
+                                                "system-monitoring-dashboard": {
+                                                    "dataRoute": "system-monitoring-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 60,
+                                                    "name": "system-monitoring-dashboard",
+                                                    "icon": "pebble-icon:dashboard-pie-chart",
+                                                    "title": "{[SysMntTxt]}"
+                                                },
+                                                "application-log-viewer": {
+                                                    "dataRoute": "application-log-viewer",
+                                                    "visible": false,
+                                                    "displaySequence": 40,
+                                                    "name": "application-log-viewer",
+                                                    "icon": "pebble-icon:log-viewer",
+                                                    "title": "{[AplLogsTxt]}"
+                                                },
+                                                "authmodel-setup": {
+                                                    "dataRoute": "authmodel-setup",
+                                                    "visible": false,
+                                                    "displaySequence": 80,
+                                                    "name": "authmodel-setup",
+                                                    "title": "{[AuthSetTxt]}"
+                                                },
+                                                "plugin-dashboard": {
+                                                    "dataRoute": "plugin-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 50,
+                                                    "name": "plugin-dashboard",
+                                                    "icon": "pebble-icon:plugin",
+                                                    "title": "{[PlgExtTxt]}"
+                                                },
+                                                "applicationmonitoring-dashboard": {
+                                                    "dataRoute": "applicationmonitoring-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 30,
+                                                    "name": "applicationmonitoring-dashboard",
+                                                    "icon": "pebble-icon:health",
+                                                    "title": "{[AplMntTxt]}"
+                                                },
+                                                "uiconfig-dashboard": {
+                                                    "dataRoute": "uiconfig-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 10,
+                                                    "name": "uiconfig-dashboard",
+                                                    "icon": "pebble-icon:profile-setting",
+                                                    "title": "{[UiCfgsTxt]}"
+                                                },
+                                                "context-model-dashboard": {
+                                                    "dataRoute": "context-model-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 80,
+                                                    "name": "context-model-dashboard",
+                                                    "icon": "pebble-icon:settings",
+                                                    "title": "{[ConModSetTxt]}"
+                                                },
+                                                "uiConfigManage": {
+                                                    "dataRoute": "app-ui-config-manage",
+                                                    "visible": false,
+                                                    "displaySequence": 120,
+                                                    "icon": "pebble-icon:uiconfig-manage",
+                                                    "name": "app-ui-config-manage",
+                                                    "title": "{[UICnfMngTit]}"
+                                                },
+                                                "policy-dashboard": {
+                                                    "dataRoute": "policy-dashboard",
+                                                    "visible": false,
+                                                    "displaySequence": 30,
+                                                    "name": "policy-dashboard",
+                                                    "icon": "pebble-icon:dashboard-speedometer-filled",
+                                                    "title": "{[PolDasTxt]}"
+                                                },
+                                                "search-graph-process-model": {
+                                                    "dataRoute": "search-graph-process-model",
+                                                    "visible": false,
+                                                    "displaySequence": 80,
+                                                    "name": "search-graph-process-model",
+                                                    "icon": "pebble-icon:settings",
+                                                    "title": "{[GpmTxt]}"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

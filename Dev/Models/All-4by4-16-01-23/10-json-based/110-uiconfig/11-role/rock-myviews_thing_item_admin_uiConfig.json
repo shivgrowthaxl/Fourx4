@@ -1,0 +1,72 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-myviews_thing_item_admin_uiConfig",
+            "name": "rock-myviews_thing_admin",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-12T18:49:49.968+1100",
+                "modifiedDate": "2023-01-12T18:49:49.968+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-myviews",
+                            "domain": "thing",
+                            "entityType": "item",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "myViews": {
+                                    "menuItems": {
+                                        "Test view": {
+                                            "isUserAction": true,
+                                            "component": {
+                                                "path": "/src/elements/rock-attribute-split-screen/rock-attribute-split-screen.html",
+                                                "name": "rock-attribute-split-screen",
+                                                "properties": {
+                                                    "mode": "view",
+                                                    "no-of-columns": 3,
+                                                    "apply-context-coalesce": true,
+                                                    "apply-locale-coalesce": true,
+                                                    "config-context": {
+                                                        "attributeNames": [
+                                                            "thgpartitemcodetitan",
+                                                            "thgskutitan",
+                                                            "thgbrandtitan",
+                                                            "thgmpntitan",
+                                                            "thgshortname",
+                                                            "thgcategorytitan",
+                                                            "thglistingstatus",
+                                                            "thgpartial"
+                                                        ]
+                                                    },
+                                                    "do-sync-validation": true
+                                                }
+                                            },
+                                            "name": "Test view",
+                                            "icon": "pebble-icon:my-view",
+                                            "title": "Test view",
+                                            "enabled": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

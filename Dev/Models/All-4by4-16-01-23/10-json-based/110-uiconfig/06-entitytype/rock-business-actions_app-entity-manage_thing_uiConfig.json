@@ -1,0 +1,62 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-business-actions_app-entity-manage_thing_uiConfig",
+            "name": "rock-business-actions_app-entity-manage_thing",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-12-19T20:43:24.862+1100",
+                "modifiedDate": "2022-12-19T20:43:24.862+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-manage",
+                            "component": "rock-business-actions",
+                            "entityType": "item"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "actionGroups": {
+                                    "troubleshoot": {
+                                        "visible": true,
+                                        "actions": {
+                                            "search-requesttracking": {
+                                                "visible": true
+                                            }
+                                        }
+                                    },
+                                    "connectors": {
+                                        "actions": {
+                                            "plugin-syndication-business-action": {
+                                                "sharedData": {},
+                                                "visible": true,
+                                                "name": "plugin-syndication-business-action",
+                                                "icon": "pebble-icon:send",
+                                                "threshold": 100,
+                                                "text": "Syndicate",
+                                                "componentName": "plugin-wizard-syndication-business-action",
+                                                "title": "Syndicate",
+                                                "actionName": "plugin-custom-business-action"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

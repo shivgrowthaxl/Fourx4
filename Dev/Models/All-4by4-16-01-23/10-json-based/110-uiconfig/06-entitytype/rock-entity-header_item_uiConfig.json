@@ -1,0 +1,81 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-header_item_uiConfig",
+            "name": "rock-entity-header_item",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-07-19T07:14:41.429-0500",
+                "modifiedDate": "2022-07-19T07:14:41.429-0500"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-header",
+                            "domain": "thing",
+                            "entityType": "item"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "headerConfig": {
+                                    "typeExternalName": {
+                                        "isMetadataAttribute": true,
+                                        "visible": false,
+                                        "attributeName": "typeExternalName",
+                                        "noTrim": true
+                                    },
+                                    "name": {
+                                        "visible": false,
+                                        "attributeName": "name",
+                                        "noTrim": true,
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgpartitemcodetitan": {
+                                        "visible": true,
+                                        "attributeName": "thgpartitemcodetitan",
+                                        "noTrim": false,
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thgshortname": {
+                                        "visible": true,
+                                        "attributeName": "thgshortname",
+                                        "noTrim": false,
+                                        "label": "{model.externalName}"
+                                    },
+                                    "id": {
+                                        "visible": false,
+                                        "attributeName": "id",
+                                        "noTrim": true,
+                                        "label": "{model.externalName}"
+                                    },
+                                    "thumbnailConfig": {
+                                        "relationshipName": "",
+                                        "relationshipFilterAttributeName": "",
+                                        "relationshipFilterAttributeValue": true,
+                                        "hideEntityThumbnail": false
+                                    },
+                                    "thgskutitan": {
+                                        "visible": true,
+                                        "attributeName": "thgskutitan",
+                                        "noTrim": false,
+                                        "label": "{model.externalName}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

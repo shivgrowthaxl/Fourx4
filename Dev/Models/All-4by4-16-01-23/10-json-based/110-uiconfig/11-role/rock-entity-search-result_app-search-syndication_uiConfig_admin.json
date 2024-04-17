@@ -1,0 +1,101 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-result_app-search-syndication_uiConfig_admin",
+            "name": "rock-entity-search-result_app-search-syndication_admin",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-13T02:30:33.209+1100",
+                "modifiedDate": "2023-01-13T02:30:33.209+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-search-syndication",
+                            "component": "rock-entity-search-result",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "gridConfig": {
+                                    "advanceSelectionEnabled": true,
+                                    "itemConfig": {
+                                        "linkTemplate": "entity-manage?id={id}&type={type}",
+                                        "fields": {
+                                            "messageType": {
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 50,
+                                                "name": "messageType",
+                                                "width": 20,
+                                                "isSyndicationAttribute": true,
+                                                "header": "{[MsgTypTxt]}",
+                                                "sortable": false
+                                            },
+                                            "action": {
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 70,
+                                                "name": "action",
+                                                "width": 20,
+                                                "isSyndicationAttribute": true,
+                                                "header": "{[AtnTxt]}",
+                                                "linkTemplate": "entity-manage?id={id}&type={type}",
+                                                "sortable": false
+                                            },
+                                            "channelName": {
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "displaySequence": 40,
+                                                "name": "channelName",
+                                                "width": 20,
+                                                "isSyndicationAttribute": true,
+                                                "header": "{[ChlNamTxt]}",
+                                                "sortable": false
+                                            },
+                                            "effectiveDate": {
+                                                "filterable": false,
+                                                "visible": true,
+                                                "isMetaDataColumn": false,
+                                                "dataType": "datetime",
+                                                "displaySequence": 45,
+                                                "name": "effectiveDate",
+                                                "isSyndicationAttribute": true,
+                                                "header": "{[EffDatTxt]}",
+                                                "sortable": false
+                                            }
+                                        }
+                                    },
+                                    "schemaType": "attribute",
+                                    "advanceSelectionOptions": [
+                                        {
+                                            "mode": "count",
+                                            "label": "{[SelTop20]}",
+                                            "itemCount": "20"
+                                        },
+                                        {
+                                            "mode": "count",
+                                            "label": "{[SelTop50]}",
+                                            "itemCount": "50"
+                                        }
+                                    ],
+                                    "hideViewSelector": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

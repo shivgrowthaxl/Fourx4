@@ -1,0 +1,63 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_salesteam_uiConfig",
+            "name": "app-repository_salesteam",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2023-01-11T03:20:04.617+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "app-repository",
+                            "role": "salesteam"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "entity-create": {
+                                    "enabled": false
+                                },
+                                "upload-assets": {
+                                    "enabled": false
+                                },
+                                "quick-actions": {
+                                    "enabled": false
+                                },
+                                "upload-csv": {
+                                    "enabled": false
+                                },
+                                "search-digitalasset": {
+                                    "dataRoute": "search-digitalasset",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "digitalAsset"
+                                        }
+                                    },
+                                    "noSettings": false,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "subtitle": "{[DASRAppTit]}",
+                                    "icon": "pebble-icon:asset-library",
+                                    "title": "{[SeaTxt]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

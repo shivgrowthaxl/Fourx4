@@ -1,0 +1,102 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "allfourx4ds_BigCommerce_withdraw_static_mappings",
+      "name": "allfourx4ds_BigCommerce_withdraw_static_mappings",
+      "type": "mappings",
+      "data": {
+        "jsonData": {
+          "mappings": [
+            {
+              "destination": "@path(id)",
+              "entityType": "item",
+              "hasUOM": false,
+              "id": -505962659,
+              "isFormattingAppliedOnExports": false,
+              "isKeyValuePair": true,
+              "isLocalizable": false,
+              "source": "id"
+            },
+            {
+              "destination": "@path(type)",
+              "entityType": "item",
+              "hasUOM": false,
+              "id": -505962659,
+              "isFormattingAppliedOnExports": false,
+              "isKeyValuePair": true,
+              "isLocalizable": false,
+              "source": "type"
+            },
+            {
+              "destination": "@path(id)",
+              "entityType": "item",
+              "hasUOM": false,
+              "id": -505962659,
+              "isFormattingAppliedOnExports": false,
+              "isKeyValuePair": true,
+              "isLocalizable": false,
+              "source": "id"
+            },
+            {
+              "destination": "@path(type)",
+              "entityType": "item",
+              "hasUOM": false,
+              "id": -505962659,
+              "isFormattingAppliedOnExports": false,
+              "isKeyValuePair": true,
+              "isLocalizable": false,
+              "source": "type"
+            }
+          ],
+          "relationshipMappings": [
+            {
+              "source": "@relAttr(hasimages,imageurl)",
+              "destination": "@path(images[%d].url)",
+              "entityType": "item",
+              "collectionType": false,
+              "hasUOM": false,
+              "locale": "en-US",
+              "enabled": true,
+              "isKeyValuePair": true
+            },
+            {
+              "source": "@relAttr(hasimages,type)",
+              "destination": "@path(images[%d].type)",
+              "entityType": "item",
+              "collectionType": false,
+              "hasUOM": false,
+              "locale": "en-US",
+              "enabled": true,
+              "isKeyValuePair": true
+            },
+            {
+              "source": "@relAttr(hasimages,imageurl)",
+              "destination": "@path(images[%d].url)",
+              "entityType": "item",
+              "collectionType": false,
+              "hasUOM": false,
+              "locale": "en-US",
+              "enabled": true,
+              "isKeyValuePair": true
+            },
+            {
+              "source": "@relAttr(hasimages,type)",
+              "destination": "@path(images[%d].type)",
+              "entityType": "item",
+              "collectionType": false,
+              "hasUOM": false,
+              "locale": "en-US",
+              "enabled": true,
+              "isKeyValuePair": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

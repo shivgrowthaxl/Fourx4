@@ -1,0 +1,152 @@
+{
+    "id": "item_Override_Azure_Blob_JSON_Export_omnivore",
+    "name": "item_Override_Azure_Blob_JSON_Export_omnivore",
+    "type": "integrationprofile",
+    "properties": {
+        "createdService": "configurationManageService",
+        "createdBy": "allfourx4.systemadmin@riversand.com_user",
+        "modifiedService": "configurationManageService",
+        "modifiedBy": "allfourx4.systemadmin@riversand.com_user",
+        "createdDate": "2023-08-01T21:24:20.937+1000",
+        "modifiedDate": "2023-08-01T21:24:20.937+1000"
+    },
+    "data": {
+        "contexts": [
+            {
+                "context": {
+                    "app": "RSConnect",
+                    "channel": "AZURE_BLOB_CONTAINER",
+                    "format": "JSON",
+                    "order": "30",
+                    "role": "admin",
+                    "service": "ENTITY_EXPORT",
+                    "source": "internal",
+                    "subtype": "System",
+                    "user": "system"
+                },
+                "jsonData": {
+                    "statusEventEnabled": "false",
+                    "transform": {
+                        "settings": {
+                            "allowNullValues": "true",
+                            "matchEnhancerAttributes": true,
+                            "clearMissingAttributes": "false",
+                            "strategies": [
+                                {
+                                    "caseFormat": "NONE",
+                                    "trimTrailingNumbers": "false",
+                                    "isDefault": "false",
+                                    "removeSpecialCharacters": "false",
+                                    "removeWhitespace": "false",
+                                    "useExternalName": "false",
+                                    "trimLeadingNumbers": "false"
+                                }
+                            ],
+                            "entityType": "@field(type)",
+                            "enableDynamicMapping": true,
+                            "source": "rms"
+                        }
+                    },
+                    "integrationType": "System",
+                    "profileType": "custom",
+                    "isEnabled": "true",
+                    "publish": {
+                        "filter": {
+                            "include": {},
+                            "exclude": {}
+                        },
+                        "isBinaryStreamPersistent": "true",
+                        "channel": [
+                            {
+                                "settings": {
+                                    "folderPath": "Omnivore-Data/",
+                                    "containerName": "allfourx4-export",
+                                    "key": "json"
+                                },
+                                "type": "azureBlobConnector"
+                            }
+                        ],
+                        "format": {
+                            "settings": {
+                                "additionalSettings": {
+                                    "encoding": "utf8"
+                                }
+                            },
+                            "type": "RSJSON",
+                            "batchSize": 1,
+                            "version": "1.1"
+                        },
+                        "isDataPersistent": "true"
+                    },
+                    "collect": {
+                        "filter": {
+                            "include": {
+                                "useProfileAttributesOnly": true,
+                                "typesCriterion": {
+                                    "item": {
+                                        "queryFields": {
+                                            "attributes": [
+                                                "thgstockkeytitan",
+                                                "thgskutitan",
+                                                "thgbrandtitan",
+                                                "thgmpntitan",
+                                                "thgisbntitan",
+                                                "thgupctitan",
+                                                "thgeantitan",
+                                                "thgweighttitan",
+                                                "thglengthtitan",
+                                                "thgwidthtitan",
+                                                "thgheighttitan",
+                                                "thgpackagetypetitan",
+                                                "thgshortname",
+                                                "thgldescriptionmpcse",
+                                                "thglongdescritpiontrademe",
+                                                "thgldescriptionws",
+                                                "thgktypes",
+                                                "thgmarketplacecategories",
+                                                "thgcondition",
+                                                "thgyoutubevid1ebay",
+                                                "thgyoutubevid2ebay",
+                                                "thgblockedchannels",
+                                                "thgurl",
+                                                "thgimageurlbigcomm",
+                                                "thgzeroinventoryebay",
+                                                "thgdeleteebaytmcse",
+                                                "thgcubicorweight"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "exclude": {}
+                        },
+                        "isBinaryStreamPersistent": "false",
+                        "channel": [
+                            {
+                                "settings": {
+                                    "includeMatchingAttributes": true,
+                                    "includeRelatedEntities": true,
+                                    "includeEnhancerAttributes": true,
+                                    "type": "RSJSON",
+                                    "version": "1.1",
+                                    "includeRelatedEntityExternalIds": false
+                                },
+                                "type": "rdpConnector"
+                            }
+                        ],
+                        "format": {
+                            "settings": {
+                                "additionalSettings": {
+                                    "encoding": "utf8"
+                                }
+                            },
+                            "type": "RSJSON",
+                            "batchSize": 1,
+                            "version": "1.1"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

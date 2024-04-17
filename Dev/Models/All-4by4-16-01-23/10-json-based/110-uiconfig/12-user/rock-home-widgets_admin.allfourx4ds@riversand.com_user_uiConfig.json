@@ -1,0 +1,45 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-home-widgets_admin.allfourx4ds@riversand.com_user_uiConfig",
+            "name": "rock-home-widgets_admin.allfourx4ds@riversand.com_user",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2023-01-12T21:58:04.410+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-home-widgets",
+                            "user": "admin.allfourx4ds@riversand.com_user"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "widgets": {
+                                    "rock-syndication-status-widget": {
+                                        "visible": true,
+                                        "config": {
+                                            "position-x": 6,
+                                            "heading": "Syndication Dashboard",
+                                            "position-y": 0,
+                                            "width": 6,
+                                            "height": 6
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

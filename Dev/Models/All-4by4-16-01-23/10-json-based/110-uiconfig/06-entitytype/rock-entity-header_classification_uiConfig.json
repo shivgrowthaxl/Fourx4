@@ -1,0 +1,55 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-header_classification_uiConfig",
+            "name": "rock-entity-header_classification",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "buildVersion": "1.84.0.2072",
+                "createdService": "configurationManageService",
+                "createdBy": "system_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "system_user",
+                "createdDate": "2023-01-08T01:16:11.799+1100",
+                "modifiedDate": "2023-01-08T01:16:11.799+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-header",
+                            "entityType": "classification"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "headerConfig": {
+                                    "rootexternalnameDisplayName": {
+                                        "visible": true
+                                    },
+                                    "externalnamepath": {
+                                        "visible": true,
+                                        "attributeName": "externalnamepath",
+                                        "noTrim": true,
+                                        "label": "{[PatTxt]}"
+                                    },
+                                    "rootexternalname": {
+                                        "visible": true,
+                                        "attributeName": "rootexternalname",
+                                        "noTrim": true,
+                                        "label": "{[TaxTxt]}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

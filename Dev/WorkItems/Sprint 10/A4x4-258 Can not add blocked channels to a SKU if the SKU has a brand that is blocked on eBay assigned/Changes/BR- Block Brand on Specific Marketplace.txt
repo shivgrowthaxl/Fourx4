@@ -1,0 +1,35 @@
+varthgbrandtitan:=GetAttributeValue["_DEFAULT","_DEFAULT","thgbrandtitan"];
+varthgblockedchannels:=GetAttributeValue["_DEFAULT","_DEFAULT","thgblockedchannels"];
+varthgblockedcommenttm:=GetAttributeValue["_DEFAULT","_DEFAULT","thgblockedcommenttm"];
+
+
+varthgblockedebay:=GetAttributeValue["_DEFAULT","_DEFAULT","thgblockedebay"];
+varEntityId:="";
+varebay:="";
+vartrademe:="";
+
+IIF[IsNullOrEmpty[varthgbrandtitan]=false ,
+SetVariable["varEntityId",GetEntityId["ANDACROSS","refmarketplacebrandrestrictions","self:self",Concat["brand:_DEFAULT:_DEFAULT:exact:",varthgbrandtitan]]],false]
+ AND 
+
+IIF[IsNullOrEmpty[varEntityId]=false ,
+SetVariable["varebay",GetEntityAttributeValueById["_DEFAULT","_DEFAULT",varEntityId,"refmarketplacebrandrestrictions","ebay"]] AND 
+SetVariable["vartrademe",GetEntityAttributeValueById["_DEFAULT","_DEFAULT",varEntityId,"refmarketplacebrandrestrictions","trademe"]] AND 
+SetAttributeValue["_DEFAULT","_DEFAULT","dummycheck", Concat[ varebay ,vartrademe ]]
+,false] AND 
+
+IIF[IsNullOrEmpty[varebay]=false AND varebay="Yes" AND vartrademe="No", 
+ SetAttributeValues["_DEFAULT","_DEFAULT","thgblockedchannels","REPLACE","eBay"]AND 
+ SetAttributeValues["_DEFAULT","_DEFAULT","thgblockedcomment","MERGE","Brand Restricted on Marketplace(s)"]
+,false] AND 
+
+IIF[ IsNullOrEmpty[vartrademe]=false AND vartrademe="Yes" AND varebay="No", 
+SetAttributeValues["_DEFAULT","_DEFAULT","thgblockedchannels","REPLACE","Trade Me"]
+ AND SetAttributeValues["_DEFAULT","_DEFAULT","thgblockedcomment","MERGE","Brand Restricted on Marketplace(s)"]
+,false]
+ AND 
+ 
+ IIF[ IsNullOrEmpty[vartrademe]=false AND IsNullOrEmpty[varebay]=false AND vartrademe="Yes" AND varebay="Yes",
+ SetAttributeValues["_DEFAULT","_DEFAULT","thgblockedchannels","REPLACE","Trade Me||eBay"] AND
+ SetAttributeValues["_DEFAULT","_DEFAULT","thgblockedcomment","MERGE","Brand Restricted on Marketplace(s)"]
+,false]

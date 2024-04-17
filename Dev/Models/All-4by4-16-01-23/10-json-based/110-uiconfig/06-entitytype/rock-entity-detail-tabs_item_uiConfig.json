@@ -1,0 +1,41 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-detail-tabs_item_uiConfig",
+            "name": "rock-entity-detail-tabs_item",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-12-29T22:22:40.503+1100",
+                "modifiedDate": "2022-12-29T22:22:40.503+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-detail-tabs",
+                            "entityType": "item"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "tabItems": {
+                                    "syndication": {
+                                        "visible": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "scheduleObjects",
+        "responseObjectName": "response"
+    },
+    "scheduleObjects": [
+        {
+            "id": "notify-connector-service-provider-schedule",
+            "name": "Notifying Service provider - non rshub",
+            "type": "scheduleobject",
+            "properties": {
+                "enabled": true,
+                "createdService": "scheduleObjectManageService",
+                "createdBy": "system_user",
+                "modifiedService": "scheduleObjectManageService",
+                "modifiedBy": "system_user",
+                "createdDate": "2023-01-08T01:16:12.474+1100",
+                "modifiedDate": "2023-01-08T01:16:12.474+1100"
+            },
+            "data": {
+                "attributes": {
+                    "scheduleType": {
+                        "values": [
+                            {
+                                "value": "fixedRate",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    },
+                    "scheduleTaskName": {
+                        "values": [
+                            {
+                                "value": "notify-service-provider-non-rshub",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    },
+                    "scheduleTaskUrl": {
+                        "values": [
+                            {
+                                "value": "http://rdp-rest:8085/allfourx4ds/api/connectorService/notifytaskstatus",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    }
+                },
+                "jsonData": {
+                    "scheduleTaskPayload": {
+                        "params": {
+                            "query": {
+                                "filters": {
+                                    "attributesCriterion": [
+                                        {
+                                            "isNotificationComplete": {
+                                                "exact": "false"
+                                            }
+                                        },
+                                        {
+                                            "hub": {
+                                                "not": true,
+                                                "exact": "rshub"
+                                            }
+                                        }
+                                    ],
+                                    "propertiesCriterion": [
+                                        {
+                                            "retryCount": {
+                                                "lte": 3
+                                            }
+                                        }
+                                    ],
+                                    "typesCriterion": [
+                                        "scheduledrequestobject"
+                                    ]
+                                }
+                            },
+                            "fields": {
+                                "attributes": [
+                                    "_ALL"
+                                ]
+                            },
+                            "rsconnect": {
+                                "profiles": [
+                                    "sys_notify_channel_status_scheduled_publish"
+                                ]
+                            }
+                        }
+                    },
+                    "scheduleConfiguration": {
+                        "authContext": {
+                            "x-rdp-userRoles": "admin",
+                            "x-rdp-clientId": "rdpclient",
+                            "x-rdp-userid": "system_user",
+                            "x-rdp-useremail": "system",
+                            "x-rdp-ownershipdata": "",
+                            "x-rdp-username": "system",
+                            "x-rdp-tenantId": "allfourx4ds"
+                        },
+                        "intervalInMins": 30
+                    }
+                }
+            }
+        }
+    ]
+}

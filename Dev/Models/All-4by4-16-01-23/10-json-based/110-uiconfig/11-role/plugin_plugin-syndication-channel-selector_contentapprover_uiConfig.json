@@ -1,0 +1,40 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-syndication-channel-selector_contentapprover_uiConfig",
+            "name": "plugin_plugin-syndication-channel-selector_contentapprover",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-12T18:50:03.113+1100",
+                "modifiedDate": "2023-01-12T18:50:03.113+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "component": "plugin-syndication-channel-selector",
+                            "role": "contentapprover"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "channelids": [
+                                    "rs-bigcommerce"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

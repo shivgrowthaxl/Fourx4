@@ -1,0 +1,13 @@
+Create new attribute: Big Commerce Brand ID [thgbrandidtitanbc]
+
+data type: Integer
+
+Group: Core Data
+
+Display Sequence: 2081”
+
+Write a BR to populate “thgbrandidtitanbc” with Brand Code based on value selected in Brand (Titan) [thgbrandtitan]. 
+
+Ref Table: Brand (Titan)-[refbrandtitan]
+
+Mapped attribute in ref table: code and value.

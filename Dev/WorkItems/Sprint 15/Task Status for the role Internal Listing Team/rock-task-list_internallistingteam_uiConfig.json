@@ -1,0 +1,40 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-task-list_internallistingteam_uiConfig",
+            "name": "rock-task-list_internallistingteam",
+            "type": "uiConfig",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-task-list",
+                            "app": "_DEFAULT",
+                            "domain": "_DEFAULT",
+                            "entityType": "_DEFAULT",
+                            "relationship": "_DEFAULT",
+                            "role": "internallistingteam"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "taskTypes": {
+                                    "systemEntityExport": {
+                                        "visible": true
+                                    },
+                                    "syndicationEntityExport": {
+                                        "visible": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

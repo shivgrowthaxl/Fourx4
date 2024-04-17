@@ -1,0 +1,69 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-syndication-dashboard-base_uiConfig",
+            "name": "plugin_plugin-syndication-dashboard",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-08T05:50:00.523+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "app-syndication",
+                            "component": "plugin-syndication-dashboard",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "titleConfig": {
+                                    "nonMinimizable": false,
+                                    "noSettings": false,
+                                    "nonClosable": false,
+                                    "title": "{[SDTxt]}"
+                                },
+                                "durationFilter": {
+                                    "visible": true,
+                                    "values": [
+                                        2,
+                                        7,
+                                        15,
+                                        30,
+                                        60,
+                                        "all"
+                                    ],
+                                    "defaultDurationVal": 7
+                                },
+                                "tabConfig": [
+                                    {
+                                        "component": {},
+                                        "valueId": "summary",
+                                        "name": "Summary",
+                                        "index": "0",
+                                        "title": "Summary",
+                                        "enableDropdownMenu": false,
+                                        "selected": true
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

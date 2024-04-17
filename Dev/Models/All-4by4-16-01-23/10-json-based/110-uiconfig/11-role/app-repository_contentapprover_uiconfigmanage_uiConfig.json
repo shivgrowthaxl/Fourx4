@@ -1,0 +1,51 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository_contentapprover_uiconfigmanage_uiConfig",
+            "name": "app-repository_contentapprover_uiconfigmanage",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "admin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "admin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-14T03:35:34.973+1100",
+                "modifiedDate": "2023-01-14T03:35:34.973+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "addOnApp": "uiconfigmanage",
+                            "component": "app-repository",
+                            "role": "contentapprover"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "app-ui-config-manage": {
+                                    "dataRoute": "app-ui-config-manage",
+                                    "component": {
+                                        "path": "/plugin-src/uiconfigmanage/elements/app-userinterface-config-manage/app-userinterface-config-manage.js",
+                                        "name": "app-userinterface-config-manage"
+                                    },
+                                    "nonMinimizable": false,
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:uiconfig-manage",
+                                    "title": "{[UICnfMngTit]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

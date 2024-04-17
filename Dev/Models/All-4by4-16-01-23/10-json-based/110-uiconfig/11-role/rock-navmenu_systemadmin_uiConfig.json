@@ -1,0 +1,60 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-navmenu_systemadmin_uiConfig",
+            "name": "rock-navmenu_systemadmin",
+            "type": "uiConfig",
+            "properties": {
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2022-12-15T22:01:42.064+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-navmenu",
+                            "role": "systemadmin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "quick-actions": {
+                                    "visible": true,
+                                    "subNavMenu": {
+                                        "upload": {
+                                            "visible": true,
+                                            "actions": {
+                                                "uploadEntities": {
+                                                    "dataRoute": "upload-excel",
+                                                    "visible": true,
+                                                    "displaySequence": 10,
+                                                    "name": "uploadEntities",
+                                                    "icon": "pebble-icon:publish",
+                                                    "text": "{[UplEntTxt]}",
+                                                    "contextData": {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "syndicationDashboard": {
+                                    "dataRoute": "syndication-dashboard",
+                                    "visible": true,
+                                    "displaySequence": 160,
+                                    "name": "syndication-dashboard",
+                                    "icon": "pebble-icon:allfourx4ds-syndicationDashboard-icon",
+                                    "title": "Syndication Dashboard"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

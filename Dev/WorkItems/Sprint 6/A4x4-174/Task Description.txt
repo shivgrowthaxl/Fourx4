@@ -1,0 +1,23 @@
+Create an attribute:
+
+Disp Name: Big Commerce Bundle SKU Component
+
+Shortname: thgbundlecomponentbc
+
+Group:  Bundle Data, 
+
+Data Type: string
+
+Display Sequence: 7031
+
+Write a BR to Populate this attribute with Bundle SKU Component [thgbundleskucomponent] values with “|” separated.
+
+
+
+should be displayed as 
+
+BUNDLE-PARENT-22-12-22-14:8|LONG-DESCRIPTION-NA-21-111
+
+Change the mapping in BC Mapping file for Bundle SKU Component (BC) = thgbundlecomponentbc (RS)
+
+Latest Mapping File is uploaded on Git- Sprint6-Folder A4x4-172/150

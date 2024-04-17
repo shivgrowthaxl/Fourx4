@@ -1,0 +1,16 @@
+~BR : invokesyndicationonupdateofdateDescription : Invoke Syndication on update of Last Syndication date~  
+varGetWFStatus:=GetAttributeValue["_DEFAULT","_DEFAULT","thgworkflowstatus"];
+  varGetDismantlingWFStatus:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingwfstatus"];
+  varthgdismantlingproduct:=GetAttributeValue["_DEFAULT","_DEFAULT","thgdismantlingproduct"];
+ IIF[IsNullOrEmpty[varGetWFStatus]=false AND
+	IsNullOrEmpty[varthgdismantlingproduct]=false AND
+	varthgdismantlingproduct=false AND
+	 (varGetWFStatus="Completed" OR
+	 varGetWFStatus="Maintainance-Completed"), InvokeConnectorService["_DEFAULT","_DEFAULT","item","syndicate","rs-bigcommerce","syndicate"] ,false] AND
+	 IIF[IsNullOrEmpty[varGetDismantlingWFStatus]=false AND
+	 varGetDismantlingWFStatus=true AND
+	 varthgdismantlingproduct=true AND
+	 (IsNullOrEmpty[varGetWFStatus]=true OR
+	  varGetWFStatus="Completed" OR
+	 varGetWFStatus="Maintainance-Completed"), InvokeConnectorService["_DEFAULT","_DEFAULT","item","syndicate","rs-bigcommerce","syndicate"]
+,false]

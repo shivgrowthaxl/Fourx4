@@ -1,0 +1,48 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-relationship-search-result-actions_hasimages_uiConfig",
+            "name": "rock-entity-relationship-search-result-actions_hasimages",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-11-17T20:34:37.599+1100",
+                "modifiedDate": "2022-11-17T20:34:37.599+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-entity-relationship-search-result-actions",
+                            "relationship": "hasimages"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "toolbarConfig": {
+                                    "buttonItems": {
+                                        "basic": {
+                                            "buttons": {
+                                                "delete": {
+                                                    "visible": true,
+                                                    "name": "delete"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

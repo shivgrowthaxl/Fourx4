@@ -1,0 +1,64 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "image_hasimages_item_graphProcessModel",
+            "name": "image_hasimages_item",
+            "type": "graphProcessModel",
+            "domain": "generic",
+            "properties": {
+                "defaultValueSource": "internal",
+                "defaultValueLocale": "en-US",
+                "graphProcessPath": "image_hasimages_item",
+                "matchRules": [
+                    {
+                        "seq": 1,
+                        "matchType": "attributeBased",
+                        "attributeMaps": [
+                            {
+                                "assetimagesku": "thgskutitan"
+                            }
+                        ],
+                        "noMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "DoNothing"
+                                    }
+                                ]
+                            }
+                        ],
+                        "singleMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "AddTargetRelationship"
+                                    }
+                                ]
+                            }
+                        ],
+                        "multiMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "AddTargetRelationship"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "createdService": "entityManageModelService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "entityManageModelService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2022-08-04T04:58:38.440-0500",
+                "modifiedDate": "2022-08-04T04:58:38.440-0500"
+            }
+        }
+    ]
+}

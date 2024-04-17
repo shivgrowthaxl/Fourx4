@@ -1,0 +1,42 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_app-profile-manage-base_uiConfig",
+            "name": "plugin_app-profile-manage",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:02:19.585+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "app-profile-manage",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "defaultEntityTypes": [
+                                    "sku"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

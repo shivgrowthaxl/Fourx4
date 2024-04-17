@@ -1,0 +1,82 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "allfourx4ds_BigCommerce_category_static_mappings",
+      "name": "allfourx4ds_BigCommerce_category_static_mappings",
+      "type": "mappings",
+      "data": {
+        "jsonData": {
+          "mappings": [
+            {
+              "entityType": "classification",
+              "destination": "@path(entityid)",
+              "isKeyValuePair": true,
+              "id": -505962659,
+              "source": "id",
+              "isFormattingAppliedOnExports": false,
+              "hasUOM": false,
+              "isLocalizable": false
+            },
+            {
+              "entityType": "classification",
+              "destination": "@path(entitytype)",
+              "isKeyValuePair": true,
+              "id": -505962659,
+              "source": "type",
+              "isFormattingAppliedOnExports": false,
+              "hasUOM": false,
+              "isLocalizable": false
+            },
+            {
+              "entityType": "classification",
+              "destination": "@path(name)",
+              "isKeyValuePair": true,
+              "id": -505962659,
+              "source": "@attr(externalName)",
+              "isFormattingAppliedOnExports": false,
+              "hasUOM": false,
+              "isLocalizable": false
+            },
+            {
+              "entityType": "classification",
+              "destination": "@path(parent_id)",
+              "isKeyValuePair": true,
+              "id": -505962659,
+              "source": "@attr(parent_id)",
+              "isFormattingAppliedOnExports": false,
+              "hasUOM": false,
+              "isLocalizable": false
+            }
+          ],
+          "relationshipMappings": [
+            {
+              "collectionType": false,
+              "entityType": "classification",
+              "destination": "@path(images[%d].url)",
+              "isKeyValuePair": true,
+              "source": "@relAttr(hasimages,imageurl)",
+              "locale": "en-US",
+              "hasUOM": false,
+              "enabled": true
+            },
+            {
+              "collectionType": false,
+              "entityType": "classification",
+              "destination": "@path(images[%d].type)",
+              "isKeyValuePair": true,
+              "source": "@relAttr(hasimages,type)",
+              "locale": "en-US",
+              "hasUOM": false,
+              "enabled": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

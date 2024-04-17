@@ -1,0 +1,39 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "rock-entity-search-result-myviews_thing_app-entity-discovery__DEFAULT_systemadmin_systemadmin.allfourx4ds@riversand.com_uiConfig",
+            "name": "rock-entity-search-result-myviews_thing_app-entity-discovery__DEFAULT_systemadmin_systemadmin.allfourx4ds@riversand.com",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "systemadmin.allfourx4ds@riversand.com",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedDate": "2022-12-16T15:50:26.861+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-discovery",
+                            "component": "rock-entity-search-result-myviews",
+                            "domain": "thing",
+                            "role": "systemadmin",
+                            "user": "systemadmin.allfourx4ds@riversand.com_user"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "myViews": {}
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+Create 2 new custom attribute Alternate Item and Related Item on Big Commerce side and map them to RS attribute Alternate Item- Big Commerce [thgalternateitembc]and Related Item-Big Commerce [thgrelateditembc] with respective SKUs. 
+
+Note it is multiple value and has to be single pipe “|” separated.
+
+On change of values in the attributes the product should get automatically syndicated.

@@ -1,0 +1,85 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_rock-wizard-workflow-model-import-base_uiConfig",
+            "name": "plugin_rock-wizard-workflow-model-import",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "rdwadmin@riversand.com_user",
+                "modifiedDate": "2023-01-12T05:00:44.482+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "rock-wizard-workflow-model-import",
+                            "sysApp": "_DEFAULT",
+                            "sysDomain": "_DEFAULT",
+                            "sysEntityType": "_DEFAULT",
+                            "sysRelationship": "_DEFAULT",
+                            "sysRole": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "nonMinimizable": false,
+                                "nonClosable": false,
+                                "name": "import-workflow-model",
+                                "isBFV2Flow": true,
+                                "label": "{[WUWMLbl]}",
+                                "steps": {
+                                    "step-1-rock-model-import": {
+                                        "component": {
+                                            "path": "../rock-model-import/rock-model-import.js",
+                                            "name": "rock-model-import",
+                                            "properties": {
+                                                "allowed-file-types": [
+                                                    "xlsx",
+                                                    "xlsm"
+                                                ],
+                                                "cop-context": {
+                                                    "subtype": "User",
+                                                    "service": "MODEL_IMPORT",
+                                                    "channel": "UI_WorkflowAppModel",
+                                                    "format": "Excel",
+                                                    "source": "internal",
+                                                    "order": 10
+                                                },
+                                                "max-files": 1,
+                                                "max-file-size": 5000000000,
+                                                "upload-request": {
+                                                    "type": "importModelDataStream"
+                                                }
+                                            }
+                                        },
+                                        "displaySequence": 10,
+                                        "name": "step-1-rock-model-import",
+                                        "stepperTitle": "{[UplFleTxt]}",
+                                        "isMandatory": true
+                                    },
+                                    "step-2-import-workflow-model-finish": {
+                                        "component": {
+                                            "path": "../rock-business-function-finish/rock-business-function-finish.js",
+                                            "name": "rock-business-function-finish"
+                                        },
+                                        "displaySequence": 20,
+                                        "name": "step-2-import-workflow-model-finish",
+                                        "label": "{[WEUUFLbl]}",
+                                        "stepperTitle": "{[FinTxt]}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

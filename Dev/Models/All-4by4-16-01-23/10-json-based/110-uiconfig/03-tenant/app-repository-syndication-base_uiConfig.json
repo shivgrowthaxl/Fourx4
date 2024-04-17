@@ -1,0 +1,70 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "app-repository-syndication-base_uiConfig",
+            "name": "app-repository",
+            "type": "uiConfig",
+            "properties": {
+                "createdService": "configurationManageService",
+                "createdBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "modifiedService": "configurationManageService",
+                "modifiedBy": "systemadmin.allfourx4ds@riversand.com_user",
+                "createdDate": "2023-01-14T03:13:43.484+1100",
+                "modifiedDate": "2023-01-14T03:13:43.484+1100"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "app-repository",
+                            "tenant": "_DEFAULT"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "search-syndication": {
+                                    "dataRoute": "search-syndication",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-entity-discovery/app-entity-discovery.js",
+                                        "name": "app-entity-discovery",
+                                        "properties": {
+                                            "domain": "thing",
+                                            "app-name": "app-search-syndication"
+                                        }
+                                    },
+                                    "noSettings": true,
+                                    "nonClosable": false,
+                                    "nonSharable": true,
+                                    "icon": "pebble-icon:bar-chart",
+                                    "title": "{[SDTxt]}",
+                                    "enabled": true
+                                },
+                                "uiconfig-dashboard": {
+                                    "dataRoute": "uiconfig-dashboard",
+                                    "nonMinimizable": false,
+                                    "component": {
+                                        "path": "../app-dashboard/app-dashboard.js",
+                                        "name": "app-dashboard",
+                                        "properties": {
+                                            "name": "uiconfig-dashboard",
+                                            "shared-data": {}
+                                        }
+                                    },
+                                    "nonClosable": false,
+                                    "icon": "pebble-icon:profile-setting",
+                                    "title": "{[UiCfgsTxt]}",
+                                    "enabled": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
